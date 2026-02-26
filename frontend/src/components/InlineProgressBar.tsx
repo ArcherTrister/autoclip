@@ -27,6 +27,12 @@ const PIPELINE_STEPS = [
   { id: 6, name: '视频切割', description: '使用FFmpeg生成切片与合集视频' }
 ];
 
+// 根据步骤ID获取步骤名称
+const getStepName = (stepId: number): string => {
+  const step = PIPELINE_STEPS.find(s => s.id === stepId);
+  return step ? step.name : '处理中...';
+};
+
 export const InlineProgressBar: React.FC<InlineProgressBarProps> = ({
   projectId,
   currentStep = 0,
@@ -79,12 +85,6 @@ export const InlineProgressBar: React.FC<InlineProgressBarProps> = ({
 
     // 通知父组件
     onProgressUpdate?.(newProgress, stepName);
-  };
-
-  // 根据步骤ID获取步骤名称
-  const getStepName = (stepId: number): string => {
-    const step = PIPELINE_STEPS.find(s => s.id === stepId);
-    return step ? step.name : '处理中...';
   };
 
   // 监听props变化，更新进度数据
@@ -237,7 +237,7 @@ export const InlineProgressBar: React.FC<InlineProgressBarProps> = ({
       </div>
       
       {/* 添加CSS动画 */}
-      <style jsx>{`
+      <style>{`
         @keyframes progressBarPulse {
           0%, 100% {
             opacity: 1;

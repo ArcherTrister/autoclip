@@ -7,6 +7,7 @@ import subprocess
 import json
 import os
 import asyncio
+import time
 from typing import Optional, List, Dict, Any, Union
 from pathlib import Path
 from enum import Enum
@@ -14,6 +15,17 @@ import requests
 from dataclasses import dataclass
 
 logger = logging.getLogger(__name__)
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+# ==========================================
+# 1. 尝试导入 faster-whisper
+# ==========================================
+try:
+    from faster_whisper import WhisperModel
+    FASTER_WHISPER_AVAILABLE = True
+    logger.debug("faster-whisper 库已找到")
+except ImportError:
+    FASTER_WHISPER_AVAILABLE = False
+    logger.warning("faster-whisper 未安装，本地 Whisper 功能将不可用。请运行: pip install faster-whisper")
 
 # 尝试导入bcut-asr
 try:
@@ -145,7 +157,7 @@ class LanguageCode(str, Enum):
 @dataclass
 class SpeechRecognitionConfig:
     """语音识别配置"""
-    method: SpeechRecognitionMethod = SpeechRecognitionMethod.BCUT_ASR
+    method: SpeechRecognitionMethod = SpeechRecognitionMethod.WHISPER_LOCAL
     language: LanguageCode = LanguageCode.AUTO
     model: str = "base"  # Whisper模型大小
     timeout: int = 0  # 超时时间（秒），0表示无限制
@@ -236,14 +248,27 @@ class SpeechRecognizer:
         logger.warning("bcut-asr不可用且自动安装失败")
         return False
     
-    def _check_whisper_availability(self) -> bool:
+    def _check_whisper_availability_bak(self) -> bool:
         """检查本地Whisper是否可用"""
         try:
             result = subprocess.run(['whisper', '--help'], 
-                                  capture_output=True, text=True, timeout=5)
+                                  capture_output=True, text=True, timeout=30)
             return result.returncode == 0
         except (subprocess.TimeoutExpired, FileNotFoundError):
             logger.warning("本地Whisper未安装或不可用")
+            return False
+
+    def _check_whisper_availability(self) -> bool:
+        """
+        检查本地 Whisper (faster-whisper) 是否可用
+        不再依赖命令行，而是检查 Python 库
+        """
+        if FASTER_WHISPER_AVAILABLE:
+            logger.info("✅ 本地 Whisper (faster-whisper) 可用")
+            return True
+        else:
+            logger.warning("❌ 本地 Whisper 不可用: faster-whisper 库未安装")
+            logger.info("💡 解决方案: pip install faster-whisper")
             return False
     
     def _check_openai_availability(self) -> bool:
@@ -457,7 +482,7 @@ class SpeechRecognizer:
                     raise SpeechRecognitionError("bcut-asr识别失败")
                 
                 # 等待5秒后重试
-                import time
+                # import time
                 time.sleep(5)
                 attempt += 1
                 logger.info(f"等待识别结果... ({attempt}/{max_attempts})")
@@ -501,7 +526,7 @@ class SpeechRecognizer:
             logger.error(error_msg)
             raise SpeechRecognitionError(error_msg)
     
-    def _generate_subtitle_whisper_local(self, video_path: Path, output_path: Path, 
+    def _generate_subtitle_whisper_local_bak(self, video_path: Path, output_path: Path, 
                                        config: SpeechRecognitionConfig) -> Path:
         """使用本地Whisper生成字幕"""
         if not self.available_methods[SpeechRecognitionMethod.WHISPER_LOCAL]:
@@ -616,6 +641,151 @@ class SpeechRecognizer:
             logger.error(error_msg)
             raise SpeechRecognitionError(error_msg)
     
+    # ==========================================
+    # 3. 核心修改：重写 Whisper 本地调用逻辑
+    # ==========================================
+    def _generate_subtitle_whisper_local(self, video_path: Path, output_path: Path, 
+                                       config: SpeechRecognitionConfig) -> Path:
+        """
+        使用 faster-whisper 生成字幕
+        """
+        if not FASTER_WHISPER_AVAILABLE:
+            raise SpeechRecognitionError(
+                "本地 Whisper (faster-whisper) 不可用。\n"
+                "解决方案: pip install faster-whisper\n"
+                "同时确保已安装 ffmpeg (macOS: brew install ffmpeg)"
+            )
+        
+        try:
+            logger.info(f"开始使用 faster-whisper 生成字幕: {video_path}")
+            
+            if not video_path.exists():
+                raise SpeechRecognitionError(f"视频文件不存在: {video_path}")
+
+            # 检查文件格式，如果是视频文件需要先提取音频
+            audio_path = self._extract_audio_from_video(video_path, output_path.parent)
+            
+            # 确定设备 (CPU 或 CUDA)
+            device = "cpu"
+            compute_type = "int8"  # CPU 上 int8 速度快且精度损失小
+            
+            # 如果有 GPU 且安装了 cuda 版本的 ctranslate2，可以自动检测
+            try:
+                import torch
+                if torch.cuda.is_available():
+                    device = "cuda"
+                    compute_type = "float16"
+                    logger.info("检测到 NVIDIA GPU，启用 CUDA 加速")
+                elif hasattr(torch.backends, 'mps') and torch.backends.mps.is_available():
+                    # Mac M1/M2 MPS 支持在 faster-whisper 中可能需要特定版本，先保守用 CPU
+                    logger.info("检测到 Apple Silicon，使用 CPU (int8) 模式以保证稳定性")
+            except ImportError:
+                pass
+
+            logger.info(f"加载模型: {config.model}, 设备: {device}, 计算类型: {compute_type}")
+            
+            # 加载模型 (首次会自动下载)
+            # download_root 可以指定缓存目录，默认 ~/.cache/huggingface/hub
+            model = WhisperModel(config.model, device=device, compute_type=compute_type)
+
+            # 准备语言参数
+            language = None
+            if config.language != LanguageCode.AUTO:
+                language = config.language.value if hasattr(config.language, 'value') else str(config.language)
+            
+            logger.info(f"开始转录 (语言: {language or '自动检测'})...")
+            
+            start_time = time.time()
+            
+            # 执行转录
+            # vad_filter=True 非常重要，能跳过静音，大幅提升速度并减少幻觉
+            segments, info = model.transcribe(
+                str(audio_path),
+                language=language,
+                beam_size=5,
+                vad_filter=True,
+                vad_parameters=dict(
+                    min_silence_duration_ms=500,
+                    speech_pad_ms=200
+                ),
+                # 如果需要逐字时间戳，可开启 word_timestamps=True (较慢)
+                word_timestamps=False
+            )
+            
+            logger.info(f"检测到的语言: {info.language} (概率: {info.language_probability:.2f})")
+            
+            # 收集结果
+            lines = []
+            segment_index = 0
+            
+            # 遍历生成器
+            for segment in segments:
+                segment_index += 1
+                start = self._format_time(segment.start, fmt=config.output_format)
+                end = self._format_time(segment.end, fmt=config.output_format)
+                text = segment.text.strip()
+                
+                if not text:
+                    continue
+                
+                if config.output_format == "srt":
+                    lines.append(f"{segment_index}\n{start} --> {end}\n{text}\n")
+                elif config.output_format == "vtt":
+                    if segment_index == 1:
+                        lines.append("WEBVTT\n\n")
+                    lines.append(f"{start} --> {end}\n{text}\n")
+                elif config.output_format == "txt":
+                    lines.append(f"{text}\n")
+                elif config.output_format == "json":
+                    lines.append({
+                        "start": segment.start,
+                        "end": segment.end,
+                        "text": text
+                    })
+            
+            elapsed = time.time() - start_time
+            logger.info(f"转录完成，共 {segment_index} 句，耗时 {elapsed:.2f} 秒")
+            
+            if not lines:
+                raise SpeechRecognitionError("未识别到任何语音内容")
+            
+            # 确保输出目录存在
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            
+            # 写入文件
+            with open(output_path, 'w', encoding='utf-8') as f:
+                if config.output_format == "json":
+                    json.dump(lines, f, ensure_ascii=False, indent=2)
+                else:
+                    f.write("\n".join(lines))
+            
+            logger.info(f"字幕保存成功: {output_path}")
+            return output_path
+
+        except Exception as e:
+            error_msg = f"faster-whisper 处理失败: {str(e)}"
+            if "Unable to load" in str(e):
+                error_msg += "\n提示: 模型下载失败或损坏，请检查网络或清理 ~/.cache/huggingface/hub"
+            elif "ffmpeg" in str(e).lower():
+                error_msg += "\n提示: 缺少 ffmpeg，请安装 (macOS: brew install ffmpeg)"
+            
+            logger.error(error_msg)
+            raise SpeechRecognitionError(error_msg)
+
+    def _format_time(self, seconds: float, fmt: str = "srt") -> str:
+        """格式化时间戳"""
+        hours = int(seconds // 3600)
+        minutes = int((seconds % 3600) // 60)
+        secs = int(seconds % 60)
+        millis = int((seconds % 1) * 1000)
+        
+        if fmt == "vtt":
+            # VTT 使用点号分隔毫秒
+            return f"{hours:02d}:{minutes:02d}:{secs:02d}.{millis:03d}"
+        else:
+            # SRT 使用逗号分隔毫秒
+            return f"{hours:02d}:{minutes:02d}:{secs:02d},{millis:03d}"
+
     def _generate_subtitle_openai_api(self, video_path: Path, output_path: Path, 
                                     config: SpeechRecognitionConfig) -> Path:
         """使用OpenAI API生成字幕"""

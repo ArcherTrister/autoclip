@@ -23,10 +23,11 @@ export interface Collection {
   created_at?: string
   project_id?: string
   thumbnail_path?: string
+  metadata?: any
 }
 
 // 项目状态类型定义，与后端保持一致
-type ProjectStatus = 'pending' | 'processing' | 'completed' | 'failed' | 'error'
+type ProjectStatus = 'pending' | 'processing' | 'completed' | 'failed' | 'error' | 'uploading'
 
 export interface Project {
   id: string

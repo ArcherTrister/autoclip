@@ -149,6 +149,10 @@ export const settingsApi = {
 
 // 项目相关API
 export const projectApi = {
+  getTaskProgress: async (taskId: string): Promise<any> => {
+    return api.get(`/tasks/${taskId}/progress`)
+  },
+  
   // 获取视频分类配置
   getVideoCategories: async (): Promise<VideoCategoriesResponse> => {
     return api.get('/video-categories')

@@ -338,12 +338,14 @@ class SiliconFlowProvider(LLMProvider):
                 "stream": False,
                 **kwargs
             }
+
+            req_timeout = kwargs.pop('timeout', (10, 120))
             
             response = requests.post(
                 f"{self.base_url}/chat/completions",
                 headers=headers,
                 json=data,
-                timeout=30
+                timeout=req_timeout
             )
             
             response.raise_for_status()

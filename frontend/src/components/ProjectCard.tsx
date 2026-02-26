@@ -312,12 +312,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onDelete, onRetry, o
       if (project.status === 'pending') {
         await projectApi.startProcessing(project.id)
       } else {
-        await projectApi.retryProcessing(project.id)
+        if (onRetry) {
+          onRetry(project.id)
+        } else {
+          await projectApi.retryProcessing(project.id)
+        }
       }
       // 移除重复的toast显示，让父组件统一处理
-      if (onRetry) {
-        onRetry(project.id)
-      }
+
     } catch (error) {
       console.error('重试失败:', error)
       message.error('重试失败，请稍后再试')
@@ -546,7 +548,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onDelete, onRetry, o
                 <>
                   <Space size={4}>
                     {/* 重试按钮 - 在处理中和等待中状态显示，允许用户重新提交任务 */}
-                    {(normalizedStatus === 'processing' || normalizedStatus === 'importing' || project.status === 'pending') && (
+                    {(normalizedStatus === 'processing' || normalizedStatus === 'importing' || project.status === 'pending' || project.status === 'completed') && (
                       <Tooltip title={project.status === 'pending' ? "开始处理" : "重新提交任务"}>
                         <Button
                           type="text"

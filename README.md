@@ -873,3 +873,47 @@ A:
 Made with ❤️ by AutoClip Team
 
 ⭐ 如果觉得有用，请给个Star支持一下！
+
+
+
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+source ~/.bashrc
+
+uv --version
+
+uv python list
+
+uv python install 3.10.0
+
+uv python list --only-installed
+
+rm -rf venv
+
+uv venv --python=3.9 venv
+uv venv --python=3.10 venv
+uv venv --python=3.11 venv
+
+source venv/bin/activate
+
+uv cache clean
+
+uv pip install -r requirements.txt
+
+cd bcut-asr
+
+sudo poetry lock
+sudo poetry build -f wheel
+sudo uv pip install dist/bcut_asr-0.0.3-py3-none-any.whl
+
+whisper /Users/archertrister/PycharmProjects/autoclip/data/temp/video.mp4 --output_dir /Users/archertrister/PycharmProjects/autoclip/data/temp --output_format srt --model tiny
+
+whisper /Users/archertrister/PycharmProjects/autoclip/data/temp/video.mp4 --output_dir /Users/archertrister/PycharmProjects/autoclip/data/temp --output_format srt --model base
+
+whisper /Users/archertrister/PycharmProjects/autoclip/data/temp/video.mp4 --output_dir /Users/archertrister/PycharmProjects/autoclip/data/temp --output_format srt --model small
+
+whisper /Users/archertrister/PycharmProjects/autoclip/data/temp/video.mp4 --output_dir /Users/archertrister/PycharmProjects/autoclip/data/temp --output_format srt --model medium
+
+whisper /Users/archertrister/PycharmProjects/autoclip/data/temp/video.mp4 --output_dir /Users/archertrister/PycharmProjects/autoclip/data/temp --output_format srt --model large
+
+turbo

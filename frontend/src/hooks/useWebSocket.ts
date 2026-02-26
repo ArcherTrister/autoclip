@@ -42,7 +42,7 @@ export interface TaskProgressUpdateMessage extends WebSocketMessage {
   type: 'task_progress_update';
   task_id?: string;
   project_id: string;
-  status: 'running' | 'completed' | 'failed';
+  status: 'running' | 'completed' | 'failed' | 'DONE';
   progress: number;
   step_name: string;
   message?: string;
@@ -186,7 +186,7 @@ export const useWebSocket = (options: UseWebSocketOptions) => {
           console.log('收到WebSocket消息:', data);
           
           // 处理pong响应
-          if (data.type === 'pong') {
+          if (data.message === 'pong') {
             console.log('收到心跳pong响应');
             if (heartbeatTimeout) {
               clearTimeout(heartbeatTimeout);

@@ -204,7 +204,6 @@ const ClipDetailModal: React.FC<ClipDetailModalProps> = ({
               </div>
 
               {/* 操作按钮 */}
-              {console.log('Rendering operation buttons in ClipDetailModal')}
               <Space>
                 <Button 
                   type="primary" 
@@ -298,15 +297,12 @@ const ClipDetailModal: React.FC<ClipDetailModalProps> = ({
 
       {/* 字幕编辑器 */}
       {showSubtitleEditor && (
-        <>
-          {console.log('Rendering SubtitleEditor with:', { showSubtitleEditor, subtitleDataLength: subtitleData.length })}
-          <SubtitleEditor
-            videoUrl={projectApi.getClipVideoUrl(projectId, clip.id, clip.title || clip.generated_title)}
-            subtitles={subtitleData}
-            onSave={handleSubtitleEditorSave}
-            onClose={handleSubtitleEditorClose}
-          />
-        </>
+        <SubtitleEditor
+          videoUrl={projectApi.getClipVideoUrl(projectId, clip.id, clip.title || clip.generated_title)}
+          subtitles={subtitleData}
+          onSave={handleSubtitleEditorSave}
+          onClose={handleSubtitleEditorClose}
+        />
       )}
     </>
   )

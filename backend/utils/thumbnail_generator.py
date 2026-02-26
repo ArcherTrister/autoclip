@@ -125,14 +125,24 @@ class ThumbnailGenerator:
         """
         try:
             # 检查是否有嵌入的封面图片
+            # cmd = [
+            #     'ffmpeg',
+            #     '-i', str(video_path),
+            #     '-an',  # 禁用音频
+            #     '-vcodec', 'copy',  # 复制视频流
+            #     '-f', 'image2',
+            #     '-vframes', '1',
+            #     '-y',
+            #     str(video_path.parent / f"{video_path.stem}_cover.jpg")
+            # ]
+
             cmd = [
                 'ffmpeg',
+                '-ss', '00:00:01', # 从第1秒提取帧，可以避免黑屏
                 '-i', str(video_path),
-                '-an',  # 禁用音频
-                '-vcodec', 'copy',  # 复制视频流
-                '-f', 'image2',
-                '-vframes', '1',
-                '-y',
+                '-an', # 禁用音频
+                '-vframes', '1', # 只提取一帧
+                '-y', # 覆盖已存在文件
                 str(video_path.parent / f"{video_path.stem}_cover.jpg")
             ]
             

@@ -1,5 +1,11 @@
 import React from 'react'
 import { Badge, Tooltip } from 'antd'
+import { 
+  LoadingOutlined, 
+  CheckCircleOutlined, 
+  ExclamationCircleOutlined,
+  ClockCircleOutlined
+} from '@ant-design/icons'
 import { Project } from '../store/useProjectStore'
 // import { 
 //   getProjectStatusConfig, 
@@ -18,6 +24,51 @@ const ProjectStatusIndicator: React.FC<ProjectStatusIndicatorProps> = ({
 }) => {
   // 暂时使用简单的状态处理
   const normalizedStatus = project.status === 'error' ? 'failed' : project.status
+
+    const getStatusConfig = () => {
+    switch (project.status) {
+      case 'uploading':
+        return {
+          color: '#1890ff',
+          icon: <ClockCircleOutlined />,
+          text: '等待处理',
+          badgeStatus: 'processing' as const
+        }
+      case 'processing':
+        return {
+          color: '#52c41a',
+          icon: <LoadingOutlined spin />,
+          text: `处理中 (${project.current_step || 0}/${project.total_steps || 6})`,
+          badgeStatus: 'processing' as const
+        }
+      case 'completed':
+        return {
+          color: '#52c41a',
+          icon: <CheckCircleOutlined />,
+          text: '处理完成',
+          badgeStatus: 'success' as const
+        }
+      case 'error':
+        return {
+          color: '#ff4d4f',
+          icon: <ExclamationCircleOutlined />,
+          text: '处理失败',
+          badgeStatus: 'error' as const
+        }
+      default:
+        return {
+          color: '#d9d9d9',
+          icon: <ClockCircleOutlined />,
+          text: '未知状态',
+          badgeStatus: 'default' as const
+        }
+    }
+  }
+
+  const config = getStatusConfig()
+  const progress = project.status === 'processing' 
+    ? ((project.current_step || 0) / (project.total_steps || 6)) * 100
+    : project.status === 'completed' ? 100 : 0
 
   const getStepName = () => {
     if (normalizedStatus === 'processing' && project.current_step) {

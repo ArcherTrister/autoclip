@@ -71,7 +71,7 @@ export const useTaskProgress = (options: UseTaskProgressOptions) => {
         onTaskComplete?.(newState);
         // 延迟进行终态校准
         setTimeout(() => performFinalStateCheck(), 1000);
-      } else if (progressMessage.status === 'FAIL') {
+      } else if (progressMessage.status === 'failed') {
         onTaskFailed?.(newState);
         // 延迟进行终态校准
         setTimeout(() => performFinalStateCheck(), 1000);

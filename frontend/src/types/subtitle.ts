@@ -13,8 +13,8 @@ export interface SubtitleSegment {
   startTime: number  // 秒
   endTime: number    // 秒
   words: SubtitleWord[]
-  text: string       // 完整文本
-  index: number      // 原始SRT索引
+  text?: string       // 完整文本
+  index?: number      // 原始SRT索引
 }
 
 // 视频编辑操作类型

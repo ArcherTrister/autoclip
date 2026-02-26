@@ -194,7 +194,7 @@ const ProcessingPage: React.FC = () => {
           />
         )}
 
-        {status && status.status === 'processing' && (
+        {status && (
           <Card title="处理进度">
             <Space direction="vertical" size="large" style={{ width: '100%' }}>
               <div>

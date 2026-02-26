@@ -317,3 +317,1247 @@ NFO - WebSocket网关服务已禁用
 2025-09-15 23:59:03,399 - backend.main - INFO - 数据库表创建完成
 2025-09-15 23:59:03,399 - backend.main - INFO - API密钥已加载到环境变量
 2025-09-15 23:59:03,399 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 13:58:44,145 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 13:58:44,907 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 13:58:45,260 - backend.services.simple_progress - ERROR - Redis连接失败: Authentication required.
+2026-02-25 13:58:45,468 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 13:58:45,471 - backend.main - INFO - 数据库表创建完成
+2026-02-25 13:58:45,471 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 13:58:45,471 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 14:00:07,392 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 14:00:07,392 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 14:02:20,970 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 14:02:21,609 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 14:02:21,723 - backend.services.simple_progress - ERROR - Redis连接失败: Authentication required.
+2026-02-25 14:02:22,099 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 14:02:22,102 - backend.main - INFO - 数据库表创建完成
+2026-02-25 14:02:22,102 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 14:02:22,102 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 14:03:11,742 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 14:03:11,742 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 14:05:57,607 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 14:05:58,184 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 14:05:58,286 - backend.services.simple_progress - ERROR - Redis连接失败: Authentication required.
+2026-02-25 14:05:58,507 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 14:05:58,509 - backend.main - INFO - 数据库表创建完成
+2026-02-25 14:05:58,509 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 14:05:58,509 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 14:07:08,988 - backend.services.project_service - INFO - 开始删除项目 135342bd-9d74-42e6-89fa-8bcc392ebec9: 318755993-1b39c895-b368-440a-ac2c-41079dcfc475
+2026-02-25 14:07:08,995 - backend.services.project_service - INFO - 删除项目 135342bd-9d74-42e6-89fa-8bcc392ebec9 的 8 个任务
+2026-02-25 14:07:08,998 - backend.services.project_service - INFO - 删除项目 135342bd-9d74-42e6-89fa-8bcc392ebec9 记录
+2026-02-25 14:07:09,000 - backend.services.project_service - INFO - 删除项目目录: data/projects/135342bd-9d74-42e6-89fa-8bcc392ebec9
+2026-02-25 14:07:09,002 - backend.services.project_service - INFO - 清理项目 135342bd-9d74-42e6-89fa-8bcc392ebec9 的Redis进度数据
+2026-02-25 14:07:09,013 - backend.services.enhanced_progress_service - WARNING - Redis连接失败，将使用内存缓存: Authentication required.
+2026-02-25 14:07:09,013 - backend.services.project_service - INFO - 项目 135342bd-9d74-42e6-89fa-8bcc392ebec9 删除成功
+2026-02-25 14:08:00,232 - backend.api.v1.projects - INFO - 开始为项目 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757 生成缩略图...
+2026-02-25 14:08:05,579 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/146d5b4c-e0f0-4f6f-a0a0-07efc0de7757/raw/input_cover.jpg
+2026-02-25 14:08:05,579 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/146d5b4c-e0f0-4f6f-a0a0-07efc0de7757/raw/input_cover.jpg
+2026-02-25 14:08:05,580 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/146d5b4c-e0f0-4f6f-a0a0-07efc0de7757/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/146d5b4c-e0f0-4f6f-a0a0-07efc0de7757/raw/temp_thumbnail_input.jpg
+2026-02-25 14:08:05,580 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/146d5b4c-e0f0-4f6f-a0a0-07efc0de7757/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/146d5b4c-e0f0-4f6f-a0a0-07efc0de7757/raw/temp_thumbnail_input.jpg
+2026-02-25 14:08:05,760 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/146d5b4c-e0f0-4f6f-a0a0-07efc0de7757/raw/temp_thumbnail_input.jpg
+2026-02-25 14:08:05,766 - backend.api.v1.projects - INFO - 项目 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757 缩略图生成并保存成功
+2026-02-25 14:08:05,805 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (0/20) now.
+2026-02-25 14:08:05,805 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (1/20) in 1.00 second.
+2026-02-25 14:08:06,810 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (2/20) in 1.00 second.
+2026-02-25 14:08:07,815 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (3/20) in 1.00 second.
+2026-02-25 14:08:08,821 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (4/20) in 1.00 second.
+2026-02-25 14:08:09,826 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (5/20) in 1.00 second.
+2026-02-25 14:08:10,832 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (6/20) in 1.00 second.
+2026-02-25 14:08:11,838 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (7/20) in 1.00 second.
+2026-02-25 14:08:12,844 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (8/20) in 1.00 second.
+2026-02-25 14:08:13,849 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (9/20) in 1.00 second.
+2026-02-25 14:08:14,850 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (10/20) in 1.00 second.
+2026-02-25 14:08:15,855 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (11/20) in 1.00 second.
+2026-02-25 14:08:16,860 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (12/20) in 1.00 second.
+2026-02-25 14:08:17,866 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (13/20) in 1.00 second.
+2026-02-25 14:08:18,870 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (14/20) in 1.00 second.
+2026-02-25 14:08:19,875 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (15/20) in 1.00 second.
+2026-02-25 14:08:20,880 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (16/20) in 1.00 second.
+2026-02-25 14:08:21,885 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (17/20) in 1.00 second.
+2026-02-25 14:08:22,889 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (18/20) in 1.00 second.
+2026-02-25 14:08:23,893 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (19/20) in 1.00 second.
+2026-02-25 14:08:24,897 - celery.backends.redis - CRITICAL - 
+Retry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.
+
+2026-02-25 14:08:24,897 - backend.api.v1.projects - ERROR - 启动项目 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757 异步处理失败: 
+Retry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.
+
+2026-02-25 14:08:40,530 - backend.services.websocket_notification_service - INFO - 项目更新通知已发送: 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757 - processing
+2026-02-25 14:08:40,540 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (0/20) now.
+2026-02-25 14:08:40,541 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (1/20) in 1.00 second.
+2026-02-25 14:08:41,547 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (2/20) in 1.00 second.
+2026-02-25 14:08:42,553 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (3/20) in 1.00 second.
+2026-02-25 14:08:43,559 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (4/20) in 1.00 second.
+2026-02-25 14:08:44,566 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (5/20) in 1.00 second.
+2026-02-25 14:08:45,572 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (6/20) in 1.00 second.
+2026-02-25 14:08:46,593 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (7/20) in 1.00 second.
+2026-02-25 14:08:47,599 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (8/20) in 1.00 second.
+2026-02-25 14:08:48,606 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (9/20) in 1.00 second.
+2026-02-25 14:08:49,610 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (10/20) in 1.00 second.
+2026-02-25 14:08:50,617 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (11/20) in 1.00 second.
+2026-02-25 14:08:51,623 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (12/20) in 1.00 second.
+2026-02-25 14:08:52,643 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (13/20) in 1.00 second.
+2026-02-25 14:08:53,649 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (14/20) in 1.00 second.
+2026-02-25 14:08:54,653 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (15/20) in 1.00 second.
+2026-02-25 14:08:55,658 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (16/20) in 1.00 second.
+2026-02-25 14:08:56,663 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (17/20) in 1.00 second.
+2026-02-25 14:08:57,668 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (18/20) in 1.00 second.
+2026-02-25 14:08:58,673 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (19/20) in 1.00 second.
+2026-02-25 14:08:59,694 - celery.backends.redis - CRITICAL - 
+Retry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.
+
+2026-02-25 14:09:00,929 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:02,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:04,930 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:06,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:08,930 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:10,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:12,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:14,929 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:15,172 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:16,930 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:17,333 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:18,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:19,333 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:20,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:21,334 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:22,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:23,334 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:24,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:25,333 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:26,930 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:27,333 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:28,930 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:30,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:32,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:34,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:36,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:38,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:40,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:42,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:44,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:46,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:48,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:50,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:52,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:54,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:56,930 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:09:58,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:00,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:02,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:04,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:06,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:08,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:10,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:12,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:14,337 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:14,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:16,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:18,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:20,998 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:22,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:24,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:26,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:28,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:30,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:32,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:34,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:36,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:38,932 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:40,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:42,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:44,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:46,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:48,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:50,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:52,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:54,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:56,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:10:58,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:00,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:02,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:04,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:06,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:08,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:10,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:12,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:14,339 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:14,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:16,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:18,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:20,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:22,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:24,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:26,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:28,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:30,937 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:32,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:34,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:36,937 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:38,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:40,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:42,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:44,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:46,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:48,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:50,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:52,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:54,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:56,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:11:58,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:00,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:02,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:04,935 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:06,937 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:08,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:10,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:12,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:14,341 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:14,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:17,338 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:19,338 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:21,339 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:23,435 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:25,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:27,338 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:29,345 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:31,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:33,339 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:35,341 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:37,341 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:39,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:41,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:43,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:45,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:47,358 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:49,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:51,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:53,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:55,340 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:57,339 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:12:58,938 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:00,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:02,938 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:04,937 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:06,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:08,938 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:10,938 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:12,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:14,344 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:14,936 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:16,938 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:18,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:20,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:22,937 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:24,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:26,938 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:28,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:30,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:32,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:34,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:36,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:38,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:40,938 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:42,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:44,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:46,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:48,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:50,938 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:52,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:54,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:56,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:13:58,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:00,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:02,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:04,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:06,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:08,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:10,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:12,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:14,345 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:14,938 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:16,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:18,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:20,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:22,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:24,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:26,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:28,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:30,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:32,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:34,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:36,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:38,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:40,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:42,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:44,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:46,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:48,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:50,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:52,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:54,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:56,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:14:58,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:00,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:02,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:04,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:06,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:08,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:10,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:12,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:14,345 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:14,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:16,941 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:18,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:20,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:22,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:24,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:26,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:28,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:30,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:32,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:34,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:36,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:38,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:40,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:42,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:44,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:46,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:48,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:50,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:52,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:54,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:56,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:15:58,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:00,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:02,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:04,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:06,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:08,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:10,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:12,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:14,348 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:14,942 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:16,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:18,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:20,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:22,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:24,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:26,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:28,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:30,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:32,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:34,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:36,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:38,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:40,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:42,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:44,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:46,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:48,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:50,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:52,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:54,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:56,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:16:58,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:00,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:02,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:04,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:06,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:08,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:10,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:12,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:14,350 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:14,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:16,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:18,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:20,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:22,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:24,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:26,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:28,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:30,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:32,944 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:34,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:36,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:38,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:40,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:42,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:44,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:46,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:48,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:50,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:52,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:54,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:56,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:17:58,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:00,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:02,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:04,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:06,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:08,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:10,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:12,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:14,351 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:14,945 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:16,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:18,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:20,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:22,946 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:24,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:26,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:28,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:30,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:32,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:34,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:36,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:38,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:40,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:42,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:44,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:46,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:48,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:50,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:52,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:54,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:56,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:18:58,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:00,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:02,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:04,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:06,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:08,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:10,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:12,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:14,352 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:14,947 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:16,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:18,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:20,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:22,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:24,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:26,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:28,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:30,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:32,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:34,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:36,951 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:38,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:40,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:42,951 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:44,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:46,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:48,951 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:50,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:52,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:54,951 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:56,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:19:58,951 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:00,951 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:02,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:04,949 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:06,948 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:08,943 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:10,940 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:12,939 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:14,341 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:14,934 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:16,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:18,933 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:20,931 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:22,929 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:24,929 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:26,926 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:28,925 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:30,926 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:32,925 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:34,922 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:36,925 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:38,923 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:40,923 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:42,924 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:44,922 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:46,921 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:48,923 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:50,922 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:52,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:20:54,842 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (0/20) now.
+2026-02-25 14:20:54,843 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (1/20) in 1.00 second.
+2026-02-25 14:20:55,847 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (2/20) in 1.00 second.
+2026-02-25 14:20:56,854 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (3/20) in 1.00 second.
+2026-02-25 14:20:57,860 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (4/20) in 1.00 second.
+2026-02-25 14:20:58,866 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (5/20) in 1.00 second.
+2026-02-25 14:20:59,873 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (6/20) in 1.00 second.
+2026-02-25 14:21:00,876 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (7/20) in 1.00 second.
+2026-02-25 14:21:01,881 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (8/20) in 1.00 second.
+2026-02-25 14:21:02,885 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (9/20) in 1.00 second.
+2026-02-25 14:21:03,892 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (10/20) in 1.00 second.
+2026-02-25 14:21:04,897 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (11/20) in 1.00 second.
+2026-02-25 14:21:05,904 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (12/20) in 1.00 second.
+2026-02-25 14:21:06,911 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (13/20) in 1.00 second.
+2026-02-25 14:21:07,915 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (14/20) in 1.00 second.
+2026-02-25 14:21:08,919 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (15/20) in 1.00 second.
+2026-02-25 14:21:09,925 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (16/20) in 1.00 second.
+2026-02-25 14:21:10,930 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (17/20) in 1.00 second.
+2026-02-25 14:21:11,936 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (18/20) in 1.00 second.
+2026-02-25 14:21:12,940 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (19/20) in 1.00 second.
+2026-02-25 14:21:13,947 - celery.backends.redis - CRITICAL - 
+Retry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.
+
+2026-02-25 14:21:13,950 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:13,968 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:14,123 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:14,292 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:14,462 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:14,632 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:14,801 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:14,970 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:15,138 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:15,306 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:15,474 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:21:15,641 - backend.api.v1.simple_progress - INFO - 获取进度快照: 0 个项目
+2026-02-25 14:29:47,688 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 14:29:47,688 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 14:30:03,830 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 14:30:04,455 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 14:30:04,554 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 14:30:04,779 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 14:30:04,782 - backend.main - INFO - 数据库表创建完成
+2026-02-25 14:30:04,782 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 14:30:04,782 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 14:30:23,671 - backend.services.websocket_notification_service - INFO - 项目更新通知已发送: 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757 - processing
+2026-02-25 14:34:46,599 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 14:34:46,599 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 14:34:47,575 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 14:34:48,298 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 14:34:48,587 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 14:34:48,590 - backend.main - INFO - 数据库表创建完成
+2026-02-25 14:34:48,590 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 14:34:48,591 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 14:36:27,897 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 14:36:27,897 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 14:38:37,387 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 14:38:39,457 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 14:38:43,293 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 14:38:43,526 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 14:38:43,529 - backend.main - INFO - 数据库表创建完成
+2026-02-25 14:38:43,529 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 14:38:43,529 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 15:04:43,328 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 15:04:43,329 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 15:04:58,639 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 15:04:59,268 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 15:04:59,382 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 15:04:59,600 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 15:04:59,602 - backend.main - INFO - 数据库表创建完成
+2026-02-25 15:04:59,602 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 15:04:59,603 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 15:13:41,381 - backend.api.v1.projects - INFO - 开始为项目 ade43df6-18ba-4669-b03f-1c7c1bc8b8d6 生成缩略图...
+2026-02-25 15:13:41,735 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/ade43df6-18ba-4669-b03f-1c7c1bc8b8d6/raw/input_cover.jpg
+2026-02-25 15:13:41,735 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/ade43df6-18ba-4669-b03f-1c7c1bc8b8d6/raw/input_cover.jpg
+2026-02-25 15:13:41,735 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/ade43df6-18ba-4669-b03f-1c7c1bc8b8d6/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/ade43df6-18ba-4669-b03f-1c7c1bc8b8d6/raw/temp_thumbnail_input.jpg
+2026-02-25 15:13:41,735 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/ade43df6-18ba-4669-b03f-1c7c1bc8b8d6/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/ade43df6-18ba-4669-b03f-1c7c1bc8b8d6/raw/temp_thumbnail_input.jpg
+2026-02-25 15:13:41,875 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/ade43df6-18ba-4669-b03f-1c7c1bc8b8d6/raw/temp_thumbnail_input.jpg
+2026-02-25 15:13:41,881 - backend.api.v1.projects - INFO - 项目 ade43df6-18ba-4669-b03f-1c7c1bc8b8d6 缩略图生成并保存成功
+2026-02-25 15:13:41,935 - backend.api.v1.projects - INFO - 项目 ade43df6-18ba-4669-b03f-1c7c1bc8b8d6 异步处理任务已启动，Celery任务ID: e74b686c-600a-457d-98ff-d4ee9a258a82
+2026-02-25 15:30:34,639 - backend.services.project_service - INFO - 开始删除项目 ade43df6-18ba-4669-b03f-1c7c1bc8b8d6: video_claude code如何收集上..._0
+2026-02-25 15:30:34,649 - backend.services.project_service - INFO - 删除项目 ade43df6-18ba-4669-b03f-1c7c1bc8b8d6 的 4 个任务
+2026-02-25 15:30:34,652 - backend.services.project_service - INFO - 删除项目 ade43df6-18ba-4669-b03f-1c7c1bc8b8d6 记录
+2026-02-25 15:30:34,654 - backend.services.project_service - INFO - 删除项目目录: data/projects/ade43df6-18ba-4669-b03f-1c7c1bc8b8d6
+2026-02-25 15:30:34,660 - backend.services.simple_progress - INFO - 已清除项目进度数据: ade43df6-18ba-4669-b03f-1c7c1bc8b8d6
+2026-02-25 15:30:34,661 - backend.services.project_service - INFO - 清理项目 ade43df6-18ba-4669-b03f-1c7c1bc8b8d6 的Redis进度数据
+2026-02-25 15:30:34,664 - backend.services.enhanced_progress_service - INFO - Redis连接成功
+2026-02-25 15:30:34,664 - backend.services.project_service - INFO - 项目 ade43df6-18ba-4669-b03f-1c7c1bc8b8d6 删除成功
+2026-02-25 15:31:31,632 - backend.api.v1.projects - INFO - 开始为项目 8c8f71c2-b1a7-4437-ab33-a0b6109a4e62 生成缩略图...
+2026-02-25 15:31:31,849 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/8c8f71c2-b1a7-4437-ab33-a0b6109a4e62/raw/input_cover.jpg
+2026-02-25 15:31:31,849 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/8c8f71c2-b1a7-4437-ab33-a0b6109a4e62/raw/input_cover.jpg
+2026-02-25 15:31:31,850 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/8c8f71c2-b1a7-4437-ab33-a0b6109a4e62/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/8c8f71c2-b1a7-4437-ab33-a0b6109a4e62/raw/temp_thumbnail_input.jpg
+2026-02-25 15:31:31,850 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/8c8f71c2-b1a7-4437-ab33-a0b6109a4e62/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/8c8f71c2-b1a7-4437-ab33-a0b6109a4e62/raw/temp_thumbnail_input.jpg
+2026-02-25 15:31:31,992 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/8c8f71c2-b1a7-4437-ab33-a0b6109a4e62/raw/temp_thumbnail_input.jpg
+2026-02-25 15:31:31,996 - backend.api.v1.projects - INFO - 项目 8c8f71c2-b1a7-4437-ab33-a0b6109a4e62 缩略图生成并保存成功
+2026-02-25 15:31:32,005 - backend.api.v1.projects - INFO - 项目 8c8f71c2-b1a7-4437-ab33-a0b6109a4e62 异步处理任务已启动，Celery任务ID: 69a479dc-e2f2-4bf1-ab9d-000d5502a072
+2026-02-25 15:36:07,224 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 15:36:07,224 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 15:36:23,415 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 15:36:24,152 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 15:36:24,450 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 15:36:24,454 - backend.main - INFO - 数据库表创建完成
+2026-02-25 15:36:24,454 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 15:36:24,454 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 15:36:39,787 - backend.services.project_service - INFO - 开始删除项目 8c8f71c2-b1a7-4437-ab33-a0b6109a4e62: video_【闪客】一口气拆穿Skill_M..._0
+2026-02-25 15:36:39,828 - backend.services.project_service - INFO - 删除项目 8c8f71c2-b1a7-4437-ab33-a0b6109a4e62 的 4 个任务
+2026-02-25 15:36:39,839 - backend.services.project_service - INFO - 删除项目 8c8f71c2-b1a7-4437-ab33-a0b6109a4e62 记录
+2026-02-25 15:36:39,841 - backend.services.project_service - INFO - 删除项目目录: data/projects/8c8f71c2-b1a7-4437-ab33-a0b6109a4e62
+2026-02-25 15:36:39,856 - backend.services.simple_progress - INFO - 已清除项目进度数据: 8c8f71c2-b1a7-4437-ab33-a0b6109a4e62
+2026-02-25 15:36:39,856 - backend.services.project_service - INFO - 清理项目 8c8f71c2-b1a7-4437-ab33-a0b6109a4e62 的Redis进度数据
+2026-02-25 15:36:39,863 - backend.services.enhanced_progress_service - INFO - Redis连接成功
+2026-02-25 15:36:39,864 - backend.services.project_service - INFO - 项目 8c8f71c2-b1a7-4437-ab33-a0b6109a4e62 删除成功
+2026-02-25 15:36:47,274 - backend.services.project_service - INFO - 开始删除项目 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757: 318755993-1b39c895-b368-440a-ac2c-41079dcfc475
+2026-02-25 15:36:47,276 - backend.services.project_service - INFO - 删除项目 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757 的 4 个任务
+2026-02-25 15:36:47,279 - backend.services.project_service - INFO - 删除项目 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757 记录
+2026-02-25 15:36:47,280 - backend.services.project_service - INFO - 删除项目目录: data/projects/146d5b4c-e0f0-4f6f-a0a0-07efc0de7757
+2026-02-25 15:36:47,287 - backend.services.simple_progress - INFO - 已清除项目进度数据: 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757
+2026-02-25 15:36:47,288 - backend.services.project_service - INFO - 清理项目 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757 的Redis进度数据
+2026-02-25 15:36:47,288 - backend.services.project_service - INFO - 项目 146d5b4c-e0f0-4f6f-a0a0-07efc0de7757 删除成功
+2026-02-25 15:40:41,033 - backend.api.v1.projects - INFO - 开始为项目 29b0ac4c-1b91-414c-b4a1-4e8c193fa99f 生成缩略图...
+2026-02-25 15:40:41,300 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/29b0ac4c-1b91-414c-b4a1-4e8c193fa99f/raw/input_cover.jpg
+2026-02-25 15:40:41,300 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/29b0ac4c-1b91-414c-b4a1-4e8c193fa99f/raw/input_cover.jpg
+2026-02-25 15:40:41,300 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/29b0ac4c-1b91-414c-b4a1-4e8c193fa99f/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/29b0ac4c-1b91-414c-b4a1-4e8c193fa99f/raw/temp_thumbnail_input.jpg
+2026-02-25 15:40:41,301 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/29b0ac4c-1b91-414c-b4a1-4e8c193fa99f/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/29b0ac4c-1b91-414c-b4a1-4e8c193fa99f/raw/temp_thumbnail_input.jpg
+2026-02-25 15:40:41,465 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/29b0ac4c-1b91-414c-b4a1-4e8c193fa99f/raw/temp_thumbnail_input.jpg
+2026-02-25 15:40:41,472 - backend.api.v1.projects - INFO - 项目 29b0ac4c-1b91-414c-b4a1-4e8c193fa99f 缩略图生成并保存成功
+2026-02-25 15:40:41,530 - backend.api.v1.projects - INFO - 项目 29b0ac4c-1b91-414c-b4a1-4e8c193fa99f 异步处理任务已启动，Celery任务ID: 7f4a24a5-a3bb-4126-a42b-7c6801f2042b
+2026-02-25 16:20:39,691 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 16:20:39,691 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 16:20:40,704 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 16:20:41,449 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 16:20:41,737 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 16:20:41,740 - backend.main - INFO - 数据库表创建完成
+2026-02-25 16:20:41,740 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 16:20:41,740 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 16:21:45,917 - backend.api.v1.projects - INFO - 开始为项目 9046a8ce-0f3e-4d57-94c7-d16221cad5df 生成缩略图...
+2026-02-25 16:21:46,112 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/9046a8ce-0f3e-4d57-94c7-d16221cad5df/raw/input_cover.jpg
+2026-02-25 16:21:46,112 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/9046a8ce-0f3e-4d57-94c7-d16221cad5df/raw/input_cover.jpg
+2026-02-25 16:21:46,112 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/9046a8ce-0f3e-4d57-94c7-d16221cad5df/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/9046a8ce-0f3e-4d57-94c7-d16221cad5df/raw/temp_thumbnail_input.jpg
+2026-02-25 16:21:46,113 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/9046a8ce-0f3e-4d57-94c7-d16221cad5df/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/9046a8ce-0f3e-4d57-94c7-d16221cad5df/raw/temp_thumbnail_input.jpg
+2026-02-25 16:21:46,250 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/9046a8ce-0f3e-4d57-94c7-d16221cad5df/raw/temp_thumbnail_input.jpg
+2026-02-25 16:21:46,257 - backend.api.v1.projects - INFO - 项目 9046a8ce-0f3e-4d57-94c7-d16221cad5df 缩略图生成并保存成功
+2026-02-25 16:21:46,313 - backend.api.v1.projects - INFO - 项目 9046a8ce-0f3e-4d57-94c7-d16221cad5df 异步处理任务已启动，Celery任务ID: 774ff6fb-eccb-42b3-98a8-ca6dbef82221
+2026-02-25 17:32:04,516 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 17:32:04,516 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 20:30:41,618 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 20:30:46,468 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 20:30:49,323 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 20:30:49,728 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 20:30:49,732 - backend.main - INFO - 数据库表创建完成
+2026-02-25 20:30:49,749 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 20:30:49,750 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 20:34:38,099 - backend.services.project_service - INFO - 开始删除项目 9046a8ce-0f3e-4d57-94c7-d16221cad5df: video_claude code如何收集上..._0
+2026-02-25 20:34:38,115 - backend.services.project_service - INFO - 删除项目 9046a8ce-0f3e-4d57-94c7-d16221cad5df 记录
+2026-02-25 20:34:38,117 - backend.services.project_service - INFO - 删除项目目录: data/projects/9046a8ce-0f3e-4d57-94c7-d16221cad5df
+2026-02-25 20:34:38,124 - backend.services.simple_progress - INFO - 已清除项目进度数据: 9046a8ce-0f3e-4d57-94c7-d16221cad5df
+2026-02-25 20:34:38,125 - backend.services.project_service - INFO - 清理项目 9046a8ce-0f3e-4d57-94c7-d16221cad5df 的Redis进度数据
+2026-02-25 20:34:38,146 - backend.services.enhanced_progress_service - INFO - Redis连接成功
+2026-02-25 20:34:38,146 - backend.services.project_service - INFO - 项目 9046a8ce-0f3e-4d57-94c7-d16221cad5df 删除成功
+2026-02-25 20:37:08,045 - backend.services.project_service - INFO - 开始删除项目 29b0ac4c-1b91-414c-b4a1-4e8c193fa99f: video_【闪客】一口气拆穿Skill_M..._0
+2026-02-25 20:37:08,050 - backend.services.project_service - INFO - 删除项目 29b0ac4c-1b91-414c-b4a1-4e8c193fa99f 的 8 个任务
+2026-02-25 20:37:08,056 - backend.services.project_service - INFO - 删除项目 29b0ac4c-1b91-414c-b4a1-4e8c193fa99f 记录
+2026-02-25 20:37:08,058 - backend.services.project_service - INFO - 删除项目目录: data/projects/29b0ac4c-1b91-414c-b4a1-4e8c193fa99f
+2026-02-25 20:37:08,076 - backend.services.simple_progress - INFO - 已清除项目进度数据: 29b0ac4c-1b91-414c-b4a1-4e8c193fa99f
+2026-02-25 20:37:08,076 - backend.services.project_service - INFO - 清理项目 29b0ac4c-1b91-414c-b4a1-4e8c193fa99f 的Redis进度数据
+2026-02-25 20:37:08,076 - backend.services.project_service - INFO - 项目 29b0ac4c-1b91-414c-b4a1-4e8c193fa99f 删除成功
+2026-02-25 20:41:08,067 - backend.api.v1.projects - INFO - 开始为项目 86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4 生成缩略图...
+2026-02-25 20:41:08,655 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4/raw/input_cover.jpg
+2026-02-25 20:41:08,655 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4/raw/input_cover.jpg
+2026-02-25 20:41:08,655 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4/raw/temp_thumbnail_input.jpg
+2026-02-25 20:41:08,655 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4/raw/temp_thumbnail_input.jpg
+2026-02-25 20:41:08,787 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4/raw/temp_thumbnail_input.jpg
+2026-02-25 20:41:08,794 - backend.api.v1.projects - INFO - 项目 86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4 缩略图生成并保存成功
+2026-02-25 20:41:08,908 - backend.api.v1.projects - INFO - 项目 86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4 异步处理任务已启动，Celery任务ID: d30d8d64-753f-4306-a23c-d613b4314e7f
+2026-02-25 21:43:05,707 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 21:43:05,707 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 21:43:25,111 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 21:43:26,107 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 21:43:26,232 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 21:43:26,595 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 21:43:26,598 - backend.main - INFO - 数据库表创建完成
+2026-02-25 21:43:26,598 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 21:43:26,598 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 21:53:55,706 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 21:53:55,706 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 21:53:57,020 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 21:53:57,579 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 21:53:57,725 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 21:53:58,060 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 21:53:58,063 - backend.main - INFO - 数据库表创建完成
+2026-02-25 21:53:58,063 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 21:53:58,063 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 21:54:30,899 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 21:54:30,899 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 21:54:32,142 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 21:54:32,698 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 21:54:32,826 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 21:54:33,139 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 21:54:33,141 - backend.main - INFO - 数据库表创建完成
+2026-02-25 21:54:33,141 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 21:54:33,141 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 21:56:55,852 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 21:56:55,852 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 21:56:56,994 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 21:56:57,658 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 21:56:57,794 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 21:56:58,148 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 21:56:58,151 - backend.main - INFO - 数据库表创建完成
+2026-02-25 21:56:58,151 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 21:56:58,151 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 21:57:01,063 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 21:57:01,063 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 21:57:22,155 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 21:57:22,659 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 21:57:22,781 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 21:57:23,112 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 21:57:23,115 - backend.main - INFO - 数据库表创建完成
+2026-02-25 21:57:23,115 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 21:57:23,115 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 21:58:34,263 - backend.api.v1.projects - INFO - 开始为项目 27a54be3-ae15-4813-8eab-2b6a19b6f443 生成缩略图...
+2026-02-25 21:58:34,535 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/27a54be3-ae15-4813-8eab-2b6a19b6f443/raw/input_cover.jpg
+2026-02-25 21:58:34,535 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/27a54be3-ae15-4813-8eab-2b6a19b6f443/raw/input_cover.jpg
+2026-02-25 21:58:34,535 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/27a54be3-ae15-4813-8eab-2b6a19b6f443/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/27a54be3-ae15-4813-8eab-2b6a19b6f443/raw/temp_thumbnail_input.jpg
+2026-02-25 21:58:34,536 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/27a54be3-ae15-4813-8eab-2b6a19b6f443/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/27a54be3-ae15-4813-8eab-2b6a19b6f443/raw/temp_thumbnail_input.jpg
+2026-02-25 21:58:34,734 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/27a54be3-ae15-4813-8eab-2b6a19b6f443/raw/temp_thumbnail_input.jpg
+2026-02-25 21:58:34,744 - backend.api.v1.projects - INFO - 项目 27a54be3-ae15-4813-8eab-2b6a19b6f443 缩略图生成并保存成功
+2026-02-25 21:58:34,862 - backend.api.v1.projects - INFO - 项目 27a54be3-ae15-4813-8eab-2b6a19b6f443 异步处理任务已启动，Celery任务ID: df1a6e68-7352-46df-9859-879e481d8d3a
+2026-02-25 22:06:04,912 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 22:06:04,912 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 22:06:06,057 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 22:06:06,676 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 22:06:06,810 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 22:06:07,193 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 22:06:07,196 - backend.main - INFO - 数据库表创建完成
+2026-02-25 22:06:07,196 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 22:06:07,196 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 22:07:27,844 - backend.core.llm_manager - INFO - 已初始化siliconflow提供商，模型: deepseek-ai/DeepSeek-V2.5
+2026-02-25 22:08:31,348 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 22:08:31,348 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 22:09:33,058 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 22:09:33,676 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 22:09:33,787 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 22:09:34,117 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 22:09:34,121 - backend.main - INFO - 数据库表创建完成
+2026-02-25 22:09:34,121 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 22:09:34,121 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 22:29:25,637 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 22:29:25,637 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 22:29:46,372 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 22:29:46,883 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 22:29:46,998 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 22:29:47,320 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 22:29:47,323 - backend.main - INFO - 数据库表创建完成
+2026-02-25 22:29:47,323 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 22:29:47,323 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 22:30:05,621 - backend.services.project_service - INFO - 开始删除项目 27a54be3-ae15-4813-8eab-2b6a19b6f443: video_claude code如何收集上..._0
+2026-02-25 22:30:05,630 - backend.services.project_service - INFO - 删除项目 27a54be3-ae15-4813-8eab-2b6a19b6f443 的 4 个任务
+2026-02-25 22:30:05,636 - backend.services.project_service - INFO - 删除项目 27a54be3-ae15-4813-8eab-2b6a19b6f443 记录
+2026-02-25 22:30:05,638 - backend.services.project_service - INFO - 删除项目目录: data/projects/27a54be3-ae15-4813-8eab-2b6a19b6f443
+2026-02-25 22:30:05,646 - backend.services.simple_progress - INFO - 已清除项目进度数据: 27a54be3-ae15-4813-8eab-2b6a19b6f443
+2026-02-25 22:30:05,647 - backend.services.project_service - INFO - 清理项目 27a54be3-ae15-4813-8eab-2b6a19b6f443 的Redis进度数据
+2026-02-25 22:30:05,654 - backend.services.enhanced_progress_service - INFO - Redis连接成功
+2026-02-25 22:30:05,654 - backend.services.project_service - INFO - 项目 27a54be3-ae15-4813-8eab-2b6a19b6f443 删除成功
+2026-02-25 22:50:46,640 - backend.core.llm_manager - INFO - 已初始化siliconflow提供商，模型: deepseek-ai/DeepSeek-V2.5
+2026-02-25 22:52:09,566 - backend.core.llm_manager - INFO - 已初始化siliconflow提供商，模型: deepseek-ai/DeepSeek-V2.5
+2026-02-25 22:52:19,610 - backend.services.project_service - INFO - 开始删除项目 86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4: video_【闪客】一口气拆穿Skill_M..._0
+2026-02-25 22:52:19,615 - backend.services.project_service - INFO - 删除项目 86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4 的 8 个任务
+2026-02-25 22:52:19,620 - backend.services.project_service - INFO - 删除项目 86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4 记录
+2026-02-25 22:52:19,622 - backend.services.project_service - INFO - 删除项目目录: data/projects/86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4
+2026-02-25 22:52:19,634 - backend.services.simple_progress - INFO - 已清除项目进度数据: 86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4
+2026-02-25 22:52:19,634 - backend.services.project_service - INFO - 清理项目 86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4 的Redis进度数据
+2026-02-25 22:52:19,634 - backend.services.project_service - INFO - 项目 86f0ac1a-3799-4be0-b8bb-84ad9d5bf9c4 删除成功
+2026-02-25 22:56:19,988 - backend.api.v1.projects - INFO - 开始为项目 7d7e0d72-2dae-48ce-b0ca-1665d9336d50 生成缩略图...
+2026-02-25 22:56:20,371 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/7d7e0d72-2dae-48ce-b0ca-1665d9336d50/raw/input_cover.jpg
+2026-02-25 22:56:20,372 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/7d7e0d72-2dae-48ce-b0ca-1665d9336d50/raw/input_cover.jpg
+2026-02-25 22:56:20,372 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/7d7e0d72-2dae-48ce-b0ca-1665d9336d50/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/7d7e0d72-2dae-48ce-b0ca-1665d9336d50/raw/temp_thumbnail_input.jpg
+2026-02-25 22:56:20,372 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/7d7e0d72-2dae-48ce-b0ca-1665d9336d50/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/7d7e0d72-2dae-48ce-b0ca-1665d9336d50/raw/temp_thumbnail_input.jpg
+2026-02-25 22:56:20,653 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/7d7e0d72-2dae-48ce-b0ca-1665d9336d50/raw/temp_thumbnail_input.jpg
+2026-02-25 22:56:20,668 - backend.api.v1.projects - INFO - 项目 7d7e0d72-2dae-48ce-b0ca-1665d9336d50 缩略图生成并保存成功
+2026-02-25 22:56:20,675 - backend.api.v1.projects - INFO - 项目 7d7e0d72-2dae-48ce-b0ca-1665d9336d50 异步处理任务已启动，Celery任务ID: f1b7c2f6-a901-4b48-980f-0b480dd1866f
+2026-02-25 23:05:15,046 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 23:05:15,047 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 23:05:16,841 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 23:05:17,578 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 23:05:17,759 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 23:05:18,339 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 23:05:18,345 - backend.main - INFO - 数据库表创建完成
+2026-02-25 23:05:18,345 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 23:05:18,346 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 23:09:05,843 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-25 23:09:05,843 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-25 23:09:07,844 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-25 23:09:08,783 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-25 23:09:09,001 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-25 23:09:09,636 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-25 23:09:09,643 - backend.main - INFO - 数据库表创建完成
+2026-02-25 23:09:09,644 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-25 23:09:09,644 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-25 23:18:34,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:36,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:38,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:40,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:42,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:44,647 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:46,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:48,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:50,622 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:52,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:54,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:56,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:18:58,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:00,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:02,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:04,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:06,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:08,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:10,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:12,623 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:14,648 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:16,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:18,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:20,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:22,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:24,648 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:26,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:28,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:30,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:32,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:34,648 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:36,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:38,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:40,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:42,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:44,651 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:46,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:48,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:50,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:52,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:54,649 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:56,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:19:58,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:00,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:02,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:04,643 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:06,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:08,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:10,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:12,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:14,643 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:16,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:18,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:20,624 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:22,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:24,636 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:26,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:28,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:30,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:32,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:34,648 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:36,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:38,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:40,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:42,625 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:44,630 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:46,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:48,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:50,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:52,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:54,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:56,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:20:58,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:00,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:02,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:04,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:06,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:08,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:10,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:12,626 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:14,655 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:16,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:18,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:20,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:22,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:24,631 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:26,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:28,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:30,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:32,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:34,633 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:36,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:38,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:40,630 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:42,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:44,637 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:46,630 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:48,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:50,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:52,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:54,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:56,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:21:58,631 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:00,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:02,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:04,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:06,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:08,627 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:10,631 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:12,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:14,640 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:16,630 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:18,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:20,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:22,631 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:24,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:26,630 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:28,631 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:30,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:32,631 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:34,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:36,630 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:38,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:40,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:42,630 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:44,666 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:46,630 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:48,629 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:50,628 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-25 23:22:52,630 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 00:10:08,126 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 00:10:08,126 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 09:13:31,117 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 09:13:35,695 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-26 09:13:36,887 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 09:13:37,208 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 09:13:37,211 - backend.main - INFO - 数据库表创建完成
+2026-02-26 09:13:37,211 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 09:13:37,211 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 09:45:55,329 - backend.core.llm_manager - INFO - 已初始化siliconflow提供商，模型: deepseek-ai/DeepSeek-V2.5
+2026-02-26 09:46:27,770 - backend.core.llm_manager - INFO - 已初始化siliconflow提供商，模型: Qwen/Qwen2.5-32B-Instruct
+2026-02-26 09:56:36,201 - backend.core.llm_manager - INFO - 已初始化siliconflow提供商，模型: deepseek-ai/DeepSeek-V2.5
+2026-02-26 10:07:17,934 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 10:07:17,934 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 10:07:19,731 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 10:07:20,479 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-26 10:07:20,637 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 10:07:20,972 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 10:07:20,975 - backend.main - INFO - 数据库表创建完成
+2026-02-26 10:07:20,975 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 10:07:20,975 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 10:07:42,550 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 10:07:42,550 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 10:07:59,184 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 10:07:59,675 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-26 10:07:59,774 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 10:08:00,113 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 10:08:00,116 - backend.main - INFO - 数据库表创建完成
+2026-02-26 10:08:00,116 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 10:08:00,116 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 10:25:26,717 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 10:25:26,718 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 10:25:42,487 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 10:25:42,928 - backend.utils.speech_recognizer - WARNING - bcut-asr未安装，将跳过bcut-asr方法
+2026-02-26 10:25:43,036 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 10:25:43,333 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 10:25:43,336 - backend.main - INFO - 数据库表创建完成
+2026-02-26 10:25:43,336 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 10:25:43,336 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 10:26:06,215 - backend.core.llm_manager - INFO - 已初始化siliconflow提供商，模型: deepseek-ai/DeepSeek-V2.5
+2026-02-26 12:51:31,579 - backend.core.llm_manager - INFO - 已初始化dashscope提供商，模型: qwen-plus
+2026-02-26 13:00:41,434 - backend.core.llm_providers - ERROR - 硅基流动调用失败: 400 Client Error: Bad Request for url: https://api.siliconflow.cn/v1/chat/completions
+2026-02-26 13:00:41,434 - backend.core.llm_providers - ERROR - 硅基流动连接测试失败: 400 Client Error: Bad Request for url: https://api.siliconflow.cn/v1/chat/completions
+2026-02-26 13:00:47,192 - backend.core.llm_providers - ERROR - 硅基流动调用失败: 400 Client Error: Bad Request for url: https://api.siliconflow.cn/v1/chat/completions
+2026-02-26 13:00:47,192 - backend.core.llm_providers - ERROR - 硅基流动连接测试失败: 400 Client Error: Bad Request for url: https://api.siliconflow.cn/v1/chat/completions
+2026-02-26 13:01:07,586 - backend.core.llm_manager - INFO - 已初始化siliconflow提供商，模型: deepseek-ai/DeepSeek-V2.5
+2026-02-26 13:02:11,235 - backend.api.v1.projects - INFO - 开始为项目 11bb157f-1ae1-4b1b-9d87-5a5adf356ec7 生成缩略图...
+2026-02-26 13:02:11,446 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/11bb157f-1ae1-4b1b-9d87-5a5adf356ec7/raw/input_cover.jpg
+2026-02-26 13:02:11,452 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/11bb157f-1ae1-4b1b-9d87-5a5adf356ec7/raw/input_cover.jpg
+2026-02-26 13:02:11,452 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/11bb157f-1ae1-4b1b-9d87-5a5adf356ec7/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/11bb157f-1ae1-4b1b-9d87-5a5adf356ec7/raw/temp_thumbnail_input.jpg
+2026-02-26 13:02:11,475 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/11bb157f-1ae1-4b1b-9d87-5a5adf356ec7/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/11bb157f-1ae1-4b1b-9d87-5a5adf356ec7/raw/temp_thumbnail_input.jpg
+2026-02-26 13:02:11,643 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/11bb157f-1ae1-4b1b-9d87-5a5adf356ec7/raw/temp_thumbnail_input.jpg
+2026-02-26 13:02:11,650 - backend.api.v1.projects - INFO - 项目 11bb157f-1ae1-4b1b-9d87-5a5adf356ec7 缩略图生成并保存成功
+2026-02-26 13:02:11,654 - backend.api.v1.projects - INFO - 项目 11bb157f-1ae1-4b1b-9d87-5a5adf356ec7 异步处理任务已启动，Celery任务ID: ae9c122c-a8be-43e8-8ddc-b0d9b3c3554d
+2026-02-26 13:09:44,277 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 13:09:44,277 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 13:34:14,678 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 13:36:34,786 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 15:14:50,489 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 15:14:57,806 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 15:14:58,077 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 15:14:58,079 - backend.main - INFO - 数据库表创建完成
+2026-02-26 15:14:58,079 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 15:14:58,079 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 15:15:18,842 - backend.services.project_service - INFO - 开始删除项目 11bb157f-1ae1-4b1b-9d87-5a5adf356ec7: video_claude code如何收集上..._0
+2026-02-26 15:15:18,851 - backend.services.project_service - INFO - 删除项目 11bb157f-1ae1-4b1b-9d87-5a5adf356ec7 记录
+2026-02-26 15:15:18,852 - backend.services.project_service - INFO - 删除项目目录: data/projects/11bb157f-1ae1-4b1b-9d87-5a5adf356ec7
+2026-02-26 15:15:18,859 - backend.services.simple_progress - INFO - 已清除项目进度数据: 11bb157f-1ae1-4b1b-9d87-5a5adf356ec7
+2026-02-26 15:15:18,859 - backend.services.project_service - INFO - 清理项目 11bb157f-1ae1-4b1b-9d87-5a5adf356ec7 的Redis进度数据
+2026-02-26 15:15:18,891 - backend.services.enhanced_progress_service - INFO - Redis连接成功
+2026-02-26 15:15:18,892 - backend.services.project_service - INFO - 项目 11bb157f-1ae1-4b1b-9d87-5a5adf356ec7 删除成功
+2026-02-26 15:16:20,727 - backend.api.v1.projects - INFO - 开始为项目 cc6e6ed2-141a-4542-9a1c-b341a6f2791a 生成缩略图...
+2026-02-26 15:16:21,307 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/cc6e6ed2-141a-4542-9a1c-b341a6f2791a/raw/input_cover.jpg
+2026-02-26 15:16:21,307 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/cc6e6ed2-141a-4542-9a1c-b341a6f2791a/raw/input_cover.jpg
+2026-02-26 15:16:21,307 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/cc6e6ed2-141a-4542-9a1c-b341a6f2791a/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/cc6e6ed2-141a-4542-9a1c-b341a6f2791a/raw/temp_thumbnail_input.jpg
+2026-02-26 15:16:21,308 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/cc6e6ed2-141a-4542-9a1c-b341a6f2791a/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/cc6e6ed2-141a-4542-9a1c-b341a6f2791a/raw/temp_thumbnail_input.jpg
+2026-02-26 15:16:21,447 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/cc6e6ed2-141a-4542-9a1c-b341a6f2791a/raw/temp_thumbnail_input.jpg
+2026-02-26 15:16:21,454 - backend.api.v1.projects - INFO - 项目 cc6e6ed2-141a-4542-9a1c-b341a6f2791a 缩略图生成并保存成功
+2026-02-26 15:16:21,501 - backend.api.v1.projects - INFO - 项目 cc6e6ed2-141a-4542-9a1c-b341a6f2791a 异步处理任务已启动，Celery任务ID: 3185b43f-2a97-4edf-8bb5-9120cde2f26e
+2026-02-26 16:49:18,758 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 16:49:18,758 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 16:49:19,904 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 16:49:20,862 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 16:49:21,163 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 16:49:21,166 - backend.main - INFO - 数据库表创建完成
+2026-02-26 16:49:21,166 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 16:49:21,166 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 16:50:32,259 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 16:50:32,259 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 16:50:33,354 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 16:50:34,124 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 16:50:34,431 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 16:50:34,434 - backend.main - INFO - 数据库表创建完成
+2026-02-26 16:50:34,434 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 16:50:34,434 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 16:51:14,718 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 16:51:14,718 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 16:51:15,787 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 16:51:16,585 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 16:51:16,885 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 16:51:16,887 - backend.main - INFO - 数据库表创建完成
+2026-02-26 16:51:16,887 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 16:51:16,887 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 16:52:06,224 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 16:52:06,224 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 16:52:07,355 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 16:52:08,082 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 16:52:08,382 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 16:52:08,384 - backend.main - INFO - 数据库表创建完成
+2026-02-26 16:52:08,384 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 16:52:08,385 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 16:52:17,444 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 16:52:17,445 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 16:52:33,520 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 16:52:34,155 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 16:52:34,424 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 16:52:34,427 - backend.main - INFO - 数据库表创建完成
+2026-02-26 16:52:34,427 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 16:52:34,427 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 16:57:46,372 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 16:57:46,372 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 16:57:47,395 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 16:57:48,177 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 16:57:48,476 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 16:57:48,479 - backend.main - INFO - 数据库表创建完成
+2026-02-26 16:57:48,479 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 16:57:48,479 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 16:58:23,503 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 16:58:23,503 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 16:58:24,571 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 16:58:25,317 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 16:58:25,592 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 16:58:25,594 - backend.main - INFO - 数据库表创建完成
+2026-02-26 16:58:25,594 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 16:58:25,594 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 17:03:26,717 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 17:03:26,717 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 17:03:27,841 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 17:03:28,953 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 17:03:29,331 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 17:03:29,334 - backend.main - INFO - 数据库表创建完成
+2026-02-26 17:03:29,334 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 17:03:29,334 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 17:05:09,751 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 17:05:09,751 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 17:05:10,870 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 17:05:11,834 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 17:05:12,174 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 17:05:12,176 - backend.main - INFO - 数据库表创建完成
+2026-02-26 17:05:12,176 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 17:05:12,176 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 17:07:03,562 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 17:07:03,562 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 17:07:04,695 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 17:07:05,715 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 17:07:06,051 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 17:07:06,053 - backend.main - INFO - 数据库表创建完成
+2026-02-26 17:07:06,053 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 17:07:06,053 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 17:07:44,545 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 17:07:44,545 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 17:07:59,585 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 17:08:00,441 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 17:08:00,794 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 17:08:00,796 - backend.main - INFO - 数据库表创建完成
+2026-02-26 17:08:00,797 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 17:08:00,797 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 17:13:09,692 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 17:13:09,692 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 17:13:10,805 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 17:13:11,850 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 17:13:12,223 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 17:13:12,226 - backend.main - INFO - 数据库表创建完成
+2026-02-26 17:13:12,226 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 17:13:12,226 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 17:18:38,506 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 17:18:38,506 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 17:28:39,554 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 17:28:40,565 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 17:28:40,998 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 17:28:41,001 - backend.main - INFO - 数据库表创建完成
+2026-02-26 17:28:41,001 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 17:28:41,001 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 17:32:28,843 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 17:32:28,844 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 17:32:29,886 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 17:32:31,028 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 17:32:31,386 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 17:32:31,389 - backend.main - INFO - 数据库表创建完成
+2026-02-26 17:32:31,389 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 17:32:31,389 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 17:32:35,720 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 17:32:35,720 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-26 19:43:53,802 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-26 19:43:54,879 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-26 19:43:55,251 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-26 19:43:55,254 - backend.main - INFO - 数据库表创建完成
+2026-02-26 19:43:55,254 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-26 19:43:55,254 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-26 19:44:28,499 - backend.services.project_service - INFO - 开始删除项目 7d7e0d72-2dae-48ce-b0ca-1665d9336d50: video_【闪客】一口气拆穿Skill_M..._0
+2026-02-26 19:44:28,505 - backend.services.project_service - INFO - 删除项目 7d7e0d72-2dae-48ce-b0ca-1665d9336d50 的 17 个任务
+2026-02-26 19:44:28,507 - backend.services.project_service - INFO - 删除项目 7d7e0d72-2dae-48ce-b0ca-1665d9336d50 的 11 个切片
+2026-02-26 19:44:28,509 - backend.services.project_service - INFO - 删除项目 7d7e0d72-2dae-48ce-b0ca-1665d9336d50 记录
+2026-02-26 19:44:28,510 - backend.services.project_service - INFO - 删除项目目录: data/projects/7d7e0d72-2dae-48ce-b0ca-1665d9336d50
+2026-02-26 19:44:28,606 - backend.services.simple_progress - INFO - 已清除项目进度数据: 7d7e0d72-2dae-48ce-b0ca-1665d9336d50
+2026-02-26 19:44:28,606 - backend.services.project_service - INFO - 清理项目 7d7e0d72-2dae-48ce-b0ca-1665d9336d50 的Redis进度数据
+2026-02-26 19:44:28,609 - backend.services.enhanced_progress_service - INFO - Redis连接成功
+2026-02-26 19:44:28,610 - backend.services.project_service - INFO - 项目 7d7e0d72-2dae-48ce-b0ca-1665d9336d50 删除成功
+2026-02-26 19:44:44,562 - backend.api.v1.projects - INFO - 开始为项目 0162f793-d281-4b15-afd0-face01e7984b 生成缩略图...
+2026-02-26 19:44:45,482 - backend.utils.thumbnail_generator - INFO - 成功提取视频封面: /Users/archertrister/PycharmProjects/autoclip/data/projects/0162f793-d281-4b15-afd0-face01e7984b/raw/input_cover.jpg
+2026-02-26 19:44:45,483 - backend.utils.thumbnail_generator - INFO - 使用视频封面作为缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/0162f793-d281-4b15-afd0-face01e7984b/raw/input_cover.jpg
+2026-02-26 19:44:45,483 - backend.utils.thumbnail_generator - INFO - 使用视频封面生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/0162f793-d281-4b15-afd0-face01e7984b/raw/input_cover.jpg -> /Users/archertrister/PycharmProjects/autoclip/data/projects/0162f793-d281-4b15-afd0-face01e7984b/raw/temp_thumbnail_input.jpg
+2026-02-26 19:44:45,483 - backend.utils.thumbnail_generator - INFO - 生成缩略图: /Users/archertrister/PycharmProjects/autoclip/data/projects/0162f793-d281-4b15-afd0-face01e7984b/raw/input.mp4 -> /Users/archertrister/PycharmProjects/autoclip/data/projects/0162f793-d281-4b15-afd0-face01e7984b/raw/temp_thumbnail_input.jpg
+2026-02-26 19:44:45,671 - backend.utils.thumbnail_generator - INFO - 缩略图生成成功: /Users/archertrister/PycharmProjects/autoclip/data/projects/0162f793-d281-4b15-afd0-face01e7984b/raw/temp_thumbnail_input.jpg
+2026-02-26 19:44:45,683 - backend.api.v1.projects - INFO - 项目 0162f793-d281-4b15-afd0-face01e7984b 缩略图生成并保存成功
+2026-02-26 19:44:45,752 - backend.api.v1.projects - INFO - 项目 0162f793-d281-4b15-afd0-face01e7984b 异步处理任务已启动，Celery任务ID: 9fa573b3-e9a4-4199-a6c1-8197429eff8e
+2026-02-26 19:51:05,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:07,899 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:09,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:11,917 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:13,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:15,917 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:17,917 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:19,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:21,899 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:23,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:25,917 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:27,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:29,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:31,899 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:33,899 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:35,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:37,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:39,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:41,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:43,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:45,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:47,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:49,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:51,899 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:53,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:55,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:57,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:51:59,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:01,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:03,899 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:05,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:07,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:09,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:11,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:13,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:15,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:17,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:19,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:21,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:23,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:25,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:27,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:29,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:31,899 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:33,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:35,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:37,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:39,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:41,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:43,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:45,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:47,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:49,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:51,900 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:53,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:55,921 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:57,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:52:59,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:01,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:03,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:05,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:07,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:09,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:11,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:13,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:15,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:17,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:19,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:21,901 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:23,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:25,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:27,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:29,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:31,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:33,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:35,912 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:37,906 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:39,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:41,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:43,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:45,916 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:47,904 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:49,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:51,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:53,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:55,922 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:57,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:53:59,904 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:01,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:03,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:05,918 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:07,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:09,904 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:11,904 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:13,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:15,914 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:17,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:19,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:21,902 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:23,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:25,912 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:27,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:29,904 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:31,903 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:33,919 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:36,364 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:38,391 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:40,364 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:42,364 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:44,363 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:46,364 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:48,364 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:50,363 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:52,367 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:54,371 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:56,371 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:54:58,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:00,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:02,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:04,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:06,397 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:08,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:10,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:12,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:14,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:16,371 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:18,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:20,370 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:22,371 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:24,372 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:26,371 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:28,371 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:30,371 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:32,371 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 19:55:57,771 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
+2026-02-26 20:00:20,311 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-26 20:00:20,311 - backend.main - INFO - WebSocket网关服务已禁用

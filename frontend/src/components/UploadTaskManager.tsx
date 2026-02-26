@@ -76,8 +76,8 @@ const UploadTaskManager: React.FC<UploadTaskManagerProps> = ({ projectId }) => {
     try {
       setLoading(true)
       const records = await uploadApi.getUploadRecords(projectId)
-      setTasks(records)
-      setFilteredTasks(records)
+      setTasks(records as UploadTask[])
+      setFilteredTasks(records as UploadTask[])
     } catch (error: any) {
       message.error('获取投稿任务失败: ' + (error.message || '未知错误'))
     } finally {

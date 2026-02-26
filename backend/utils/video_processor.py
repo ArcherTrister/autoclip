@@ -154,15 +154,29 @@ class VideoProcessor:
             
             # 构建优化的FFmpeg命令
             # 使用 -ss 在输入前进行精确定位，使用 -t 指定持续时间
+            # cmd = [
+            #     'ffmpeg',
+            #     '-ss', ffmpeg_start_time,  # 在输入前定位，更精确
+            #     '-i', str(input_video),
+            #     '-t', str(duration),  # 使用持续时间而不是绝对结束时间
+            #     '-c:v', 'copy',  # 复制视频流
+            #     '-c:a', 'copy',  # 复制音频流
+            #     '-avoid_negative_ts', 'make_zero',
+            #     '-y',  # 覆盖输出文件
+            #     str(output_path)
+            # ]
+
             cmd = [
                 'ffmpeg',
-                '-ss', ffmpeg_start_time,  # 在输入前定位，更精确
                 '-i', str(input_video),
-                '-t', str(duration),  # 使用持续时间而不是绝对结束时间
-                '-c:v', 'copy',  # 复制视频流
-                '-c:a', 'copy',  # 复制音频流
+                '-ss', ffmpeg_start_time,
+                '-t', str(duration),
+                '-c:v', 'libx264',    # 转码视频流
+                '-c:a', 'aac',        # 转码音频流
+                '-strict', '-2',      # 兼容旧版aac参数
                 '-avoid_negative_ts', 'make_zero',
-                '-y',  # 覆盖输出文件
+                '-preset', 'ultrafast',    # 可选，转码更快
+                '-y',
                 str(output_path)
             ]
             
