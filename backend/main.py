@@ -4,6 +4,8 @@ import logging
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
+import os
 
 # 导入配置管理
 from .core.config import settings, get_logging_config, get_api_key
@@ -80,6 +82,14 @@ app.add_middleware(
 
 # Include unified API routes
 app.include_router(api_router, prefix="/api/v1")
+
+# 提供前端静态文件
+frontend_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend", "dist")
+if os.path.exists(frontend_dir):
+    app.mount("/", StaticFiles(directory=frontend_dir, html=True), name="frontend")
+    logger.info(f"前端静态文件服务已启动，目录: {frontend_dir}")
+else:
+    logger.warning(f"前端静态文件目录不存在: {frontend_dir}")
 
 # 添加独立的video-categories端点
 @app.get("/api/v1/video-categories")

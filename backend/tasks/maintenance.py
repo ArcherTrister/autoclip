@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 from celery import current_task, shared_task
+from sqlalchemy import text
 
 from ..core.celery_app import celery_app
 from ..core.database import SessionLocal
@@ -103,7 +104,7 @@ def health_check(self) -> Dict[str, Any]:
         # 检查数据库连接
         try:
             db = SessionLocal()
-            db.execute("SELECT 1")
+            db.execute(text("SELECT 1"))
             db.close()
             health_status['checks']['database'] = {'status': 'healthy', 'message': '数据库连接正常'}
         except Exception as e:
@@ -113,7 +114,8 @@ def health_check(self) -> Dict[str, Any]:
         # 检查Redis连接
         try:
             import redis
-            r = redis.Redis.from_url('redis://localhost:6379/0')
+            redis_url = os.getenv("REDIS_URL", "redis://localhost:6379/0")
+            r = redis.Redis.from_url(redis_url)
             r.ping()
             health_status['checks']['redis'] = {'status': 'healthy', 'message': 'Redis连接正常'}
         except Exception as e:

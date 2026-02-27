@@ -339,6 +339,13 @@ class SiliconFlowProvider(LLMProvider):
                 **kwargs
             }
 
+            # 【新增】打印调试信息
+            logger.info("-" * 30)
+            logger.info(f"🚀 正在请求模型: {data['model']}")
+            logger.info(f"📝 发送的 Messages: {json.dumps(data['messages'], ensure_ascii=False)}")
+            logger.info(f"⚙️ 其他参数: { {k:v for k,v in data.items() if k != 'messages'} }")
+            logger.info("-" * 30)
+
             req_timeout = kwargs.pop('timeout', (10, 120))
             
             response = requests.post(

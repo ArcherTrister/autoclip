@@ -145,7 +145,7 @@ start_services() {
     sleep 10
     
     # 检查服务状态
-    if docker-compose -f "$COMPOSE_FILE" ps | grep -q "Up"; then
+    if docker-compose -f "$COMPOSE_FILE" ps | grep -E "Up|Running"; then
         log_success "服务启动成功"
     else
         log_error "服务启动失败"

@@ -24,11 +24,12 @@ services:
     restart: unless-stopped
     ports:
       - "8000:8000"  # 后端API
-      - "3000:3000"  # 前端界面
+      - "3000:8000"  # 前端界面
     volumes:
       - ./data:/app/data
       - ./logs:/app/logs
       - ./uploads:/app/uploads
+      - ~/.cache/huggingface/hub:/home/autoclip/.cache/huggingface/hub
     environment:
       - REDIS_URL=redis://redis:6379/0
       - DATABASE_URL=sqlite:///./data/autoclip.db
@@ -56,13 +57,14 @@ services:
       - ./data:/app/data
       - ./logs:/app/logs
       - ./uploads:/app/uploads
+      - ~/.cache/huggingface/hub:/home/autoclip/.cache/huggingface/hub
     environment:
       - REDIS_URL=redis://redis:6379/0
       - DATABASE_URL=sqlite:///./data/autoclip.db
       - ENVIRONMENT=production
       - DEBUG=false
       - LOG_LEVEL=INFO
-    command: celery -A backend.core.celery_app worker --loglevel=info --concurrency=2
+    command: celery -A backend.core.celery_app worker --loglevel=info --concurrency=2 -Q processing,upload,notification,maintenance,video
     depends_on:
       redis:
         condition: service_healthy

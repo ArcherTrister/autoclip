@@ -1,10 +1,10 @@
 {
-  "llm_provider": "siliconflow",
+  "llm_provider": "dashscope",
   "dashscope_api_key": "sk-0b494d66756d4cdc91b4d4832a816dcb",
   "openai_api_key": "",
   "gemini_api_key": "",
   "siliconflow_api_key": "sk-umxrjddedsakelhlqmiyagiavuvawddvokdxpyfrwpqdmfiy",
-  "model_name": "deepseek-ai/DeepSeek-V2.5",
+  "model_name": "qwen-max",
   "chunk_size": 5000,
   "min_score_threshold": 0.7,
   "max_clips_per_collection": 5
