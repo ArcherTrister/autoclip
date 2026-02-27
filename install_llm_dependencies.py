@@ -24,7 +24,7 @@ def main():
     packages = [
         "openai>=1.0.0",           # OpenAI
         "google-generativeai>=0.3.0",  # Google Gemini
-        "requests>=2.25.0",        # 硅基流动 (HTTP请求)
+        "requests>=2.25.0",        # 硅基流动和DeepSeek (HTTP请求)
         "dashscope>=1.10.0",       # 阿里通义千问 (如果还没有安装)
     ]
     

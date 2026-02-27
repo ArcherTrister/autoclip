@@ -12,6 +12,10 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class APISettings(BaseModel):
     """API配置"""
     dashscope_api_key: str = Field(default='', validation_alias=AliasChoices('API_DASHSCOPE_API_KEY'))
+    openai_api_key: str = Field(default='', validation_alias=AliasChoices('API_OPENAI_API_KEY'))
+    gemini_api_key: str = Field(default='', validation_alias=AliasChoices('API_GEMINI_API_KEY'))
+    siliconflow_api_key: str = Field(default='', validation_alias=AliasChoices('API_SILICONFLOW_API_KEY'))
+    deepseek_api_key: str = Field(default='', validation_alias=AliasChoices('API_DEEPSEEK_API_KEY'))
     model_name: str = Field(default='qwen-plus', validation_alias=AliasChoices('API_MODEL_NAME'))
     max_tokens: int = Field(default=4096, validation_alias=AliasChoices('API_MAX_TOKENS'))
     timeout: int = Field(default=30, validation_alias=AliasChoices('API_TIMEOUT'))
@@ -50,6 +54,10 @@ class Settings(BaseSettings):
     database_url: str = Field(default='sqlite:///./data/autoclip.db', validation_alias=AliasChoices('DATABASE_URL'))
     redis_url: str = Field(default='redis://localhost:6379/0', validation_alias=AliasChoices('REDIS_URL'))
     api_dashscope_api_key: str = Field(default='', validation_alias=AliasChoices('API_DASHSCOPE_API_KEY'))
+    api_openai_api_key: str = Field(default='', validation_alias=AliasChoices('API_OPENAI_API_KEY'))
+    api_gemini_api_key: str = Field(default='', validation_alias=AliasChoices('API_GEMINI_API_KEY'))
+    api_siliconflow_api_key: str = Field(default='', validation_alias=AliasChoices('API_SILICONFLOW_API_KEY'))
+    api_deepseek_api_key: str = Field(default='', validation_alias=AliasChoices('API_DEEPSEEK_API_KEY'))
     api_model_name: str = Field(default='qwen-plus', validation_alias=AliasChoices('API_MODEL_NAME'))
     api_max_tokens: int = Field(default=4096, validation_alias=AliasChoices('API_MAX_TOKENS'))
     api_timeout: int = Field(default=30, validation_alias=AliasChoices('API_TIMEOUT'))

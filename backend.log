@@ -1561,3 +1561,100 @@ Retry limit exceeded while trying to reconnect to the Celery redis result store 
 2026-02-26 19:55:57,771 - backend.api.v1.simple_progress - INFO - 获取进度快照: 1 个项目
 2026-02-26 20:00:20,311 - backend.main - INFO - 正在关闭AutoClip API服务...
 2026-02-26 20:00:20,311 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-27 21:51:19,986 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-27 21:51:24,970 - backend.utils.speech_recognizer - WARNING - faster-whisper 未安装，本地 Whisper 功能将不可用。请运行: pip install faster-whisper
+2026-02-27 21:51:31,974 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-27 21:51:32,187 - backend.main - WARNING - 前端静态文件目录不存在: /Users/archertrister/PycharmProjects/autoclip/frontend/dist
+2026-02-27 21:51:34,178 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-27 21:51:34,186 - backend.main - INFO - 数据库表创建完成
+2026-02-27 21:51:34,186 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-27 21:51:34,186 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-27 21:51:34,187 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-27 21:51:34,187 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-27 21:51:49,111 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-27 21:51:49,778 - backend.utils.speech_recognizer - WARNING - faster-whisper 未安装，本地 Whisper 功能将不可用。请运行: pip install faster-whisper
+2026-02-27 21:51:49,903 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-27 21:51:50,128 - backend.main - WARNING - 前端静态文件目录不存在: /Users/archertrister/PycharmProjects/autoclip/frontend/dist
+2026-02-27 21:51:50,230 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-27 21:51:50,233 - backend.main - INFO - 数据库表创建完成
+2026-02-27 21:51:50,233 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-27 21:51:50,234 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-27 21:52:03,936 - backend.core.llm_manager - INFO - 已初始化dashscope提供商，模型: qwen-max
+2026-02-27 22:26:23,963 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-27 22:26:26,563 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-27 22:26:26,859 - backend.main - WARNING - 前端静态文件目录不存在: /Users/archertrister/PycharmProjects/autoclip/frontend/dist
+2026-02-27 22:26:26,862 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-27 22:26:26,865 - backend.main - INFO - 数据库表创建完成
+2026-02-27 22:26:26,865 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-27 22:26:26,865 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-27 22:26:47,203 - backend.core.llm_manager - INFO - 已初始化dashscope提供商，模型: qwen-max
+2026-02-27 22:30:05,422 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-27 22:30:05,422 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-27 22:30:07,415 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-27 22:30:09,162 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-27 22:30:09,485 - backend.main - WARNING - 前端静态文件目录不存在: /Users/archertrister/PycharmProjects/autoclip/frontend/dist
+2026-02-27 22:30:09,488 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-27 22:30:09,492 - backend.main - INFO - 数据库表创建完成
+2026-02-27 22:30:09,492 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-27 22:30:09,492 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-27 22:30:09,593 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-27 22:30:09,594 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-27 22:30:12,015 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-27 22:30:12,015 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-27 22:30:22,056 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-27 22:30:22,815 - backend.utils.speech_recognizer - WARNING - faster-whisper 未安装，本地 Whisper 功能将不可用。请运行: pip install faster-whisper
+2026-02-27 22:30:22,962 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-27 22:30:23,196 - backend.main - WARNING - 前端静态文件目录不存在: /Users/archertrister/PycharmProjects/autoclip/frontend/dist
+2026-02-27 22:30:23,302 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-27 22:30:23,305 - backend.main - INFO - 数据库表创建完成
+2026-02-27 22:30:23,305 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-27 22:30:23,305 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-27 22:30:33,386 - backend.core.llm_manager - INFO - 已初始化dashscope提供商，模型: qwen-max
+2026-02-27 22:31:03,061 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-27 22:31:04,872 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-27 22:31:05,273 - backend.main - WARNING - 前端静态文件目录不存在: /Users/archertrister/PycharmProjects/autoclip/frontend/dist
+2026-02-27 22:31:05,276 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-27 22:31:05,279 - backend.main - INFO - 数据库表创建完成
+2026-02-27 22:31:05,279 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-27 22:31:05,279 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-27 22:32:00,655 - backend.core.llm_manager - INFO - 已初始化dashscope提供商，模型: qwen-max
+2026-02-27 22:32:13,308 - backend.core.llm_providers - INFO - ------------------------------
+2026-02-27 22:32:13,308 - backend.core.llm_providers - INFO - 🚀 正在请求模型: deepseek-reasoner
+2026-02-27 22:32:13,308 - backend.core.llm_providers - INFO - 📝 发送的 Messages: [{"role": "user", "content": "请回复'测试成功'"}]
+2026-02-27 22:32:13,308 - backend.core.llm_providers - INFO - ⚙️ 其他参数: {'model': 'deepseek-reasoner', 'stream': False}
+2026-02-27 22:32:13,308 - backend.core.llm_providers - INFO - ------------------------------
+2026-02-27 22:32:26,603 - backend.core.llm_manager - WARNING - 未找到deepseek的API密钥
+2026-02-27 22:38:37,819 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-27 22:38:37,819 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-27 22:38:39,641 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-27 22:38:41,524 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-27 22:38:41,873 - backend.main - WARNING - 前端静态文件目录不存在: /Users/archertrister/PycharmProjects/autoclip/frontend/dist
+2026-02-27 22:38:41,875 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-27 22:38:41,877 - backend.main - INFO - 数据库表创建完成
+2026-02-27 22:38:41,877 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-27 22:38:41,878 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-27 22:38:43,413 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-27 22:38:43,413 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-27 22:39:17,532 - backend.main - INFO - 正在关闭AutoClip API服务...
+2026-02-27 22:39:17,532 - backend.main - INFO - WebSocket网关服务已禁用
+2026-02-27 22:39:28,643 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-27 22:39:29,279 - backend.utils.speech_recognizer - WARNING - faster-whisper 未安装，本地 Whisper 功能将不可用。请运行: pip install faster-whisper
+2026-02-27 22:39:29,387 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-27 22:39:29,599 - backend.main - WARNING - 前端静态文件目录不存在: /Users/archertrister/PycharmProjects/autoclip/frontend/dist
+2026-02-27 22:39:29,699 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-27 22:39:29,703 - backend.main - INFO - 数据库表创建完成
+2026-02-27 22:39:29,703 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-27 22:39:29,703 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-27 22:40:28,715 - backend.services.processing_orchestrator - INFO - 流水线模块导入成功
+2026-02-27 22:40:30,309 - backend.services.simple_progress - INFO - Redis连接成功
+2026-02-27 22:40:30,553 - backend.main - WARNING - 前端静态文件目录不存在: /Users/archertrister/PycharmProjects/autoclip/frontend/dist
+2026-02-27 22:40:30,555 - backend.main - INFO - 启动AutoClip API服务...
+2026-02-27 22:40:30,557 - backend.main - INFO - 数据库表创建完成
+2026-02-27 22:40:30,557 - backend.main - INFO - API密钥已加载到环境变量
+2026-02-27 22:40:30,557 - backend.main - INFO - WebSocket网关服务已禁用，使用新的简化进度系统
+2026-02-27 22:40:35,097 - backend.core.llm_manager - INFO - 已初始化deepseek提供商，模型: deepseek-reasoner
+2026-02-27 22:40:43,222 - backend.core.llm_providers - INFO - ------------------------------
+2026-02-27 22:40:43,222 - backend.core.llm_providers - INFO - 🚀 正在请求模型: deepseek-reasoner
+2026-02-27 22:40:43,223 - backend.core.llm_providers - INFO - 📝 发送的 Messages: [{"role": "user", "content": "请回复'测试成功'"}]
+2026-02-27 22:40:43,223 - backend.core.llm_providers - INFO - ⚙️ 其他参数: {'model': 'deepseek-reasoner', 'stream': False}
+2026-02-27 22:40:43,223 - backend.core.llm_providers - INFO - ------------------------------
