@@ -319,6 +319,28 @@ const ClipCard: React.FC<ClipCardProps> = ({
               >
                 {formatDuration(calculateDuration(clip.start_time, clip.end_time))}
               </div>
+              
+              {/* 左上角状态标识 */}
+              {clip.status === 'invalidated' && (
+                <div 
+                  style={{
+                    position: 'absolute',
+                    top: '12px',
+                    left: '12px',
+                    background: '#ff4d4f',
+                    color: 'white',
+                    padding: '4px 8px',
+                    borderRadius: '8px',
+                    fontSize: '12px',
+                    fontWeight: 500,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '4px'
+                  }}
+                >
+                  已作废
+                </div>
+              )}
             </div>
           }
         >

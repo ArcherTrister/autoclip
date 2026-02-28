@@ -181,6 +181,14 @@ class DataSyncService:
                 logger.warning(f"项目 {project_id} 切片数据格式不正确")
                 return 0
             
+            # 生成批次号
+            import uuid
+            batch_number = str(uuid.uuid4())
+            logger.info(f"为项目 {project_id} 生成批次号: {batch_number}")
+            
+            # 标记旧切片为无效
+            self._invalidate_old_clips(project_id)
+            
             synced_count = 0
             updated_count = 0
             for clip_data in clips_data:
@@ -221,6 +229,7 @@ class DataSyncService:
                         video_path = str(project_video_path)
                         logger.info(f"更新切片 {existing_clip.id} 的video_path: {video_path}")
                         existing_clip.video_path = video_path
+                        existing_clip.batch_number = batch_number
                         if existing_clip.tags is None:
                             existing_clip.tags = []  # 确保tags是空列表而不是null
                         updated_count += 1
@@ -284,7 +293,8 @@ class DataSyncService:
                         video_path=video_path,
                         tags=[],  # 确保tags是空列表而不是null
                         clip_metadata=clip_data,
-                        status=ClipStatus.COMPLETED
+                        status=ClipStatus.COMPLETED,
+                        batch_number=batch_number
                     )
                     
                     self.db.add(clip)
@@ -295,12 +305,28 @@ class DataSyncService:
                     continue
             
             self.db.commit()
-            logger.info(f"项目 {project_id} 同步了 {synced_count} 个切片，更新了 {updated_count} 个切片")
+            logger.info(f"项目 {project_id} 同步了 {synced_count} 个切片，更新了 {updated_count} 个切片，批次号: {batch_number}")
             return synced_count
             
         except Exception as e:
             logger.error(f"同步切片数据失败: {str(e)}")
             return 0
+    
+    def _invalidate_old_clips(self, project_id: str):
+        """标记旧切片为无效"""
+        try:
+            # 获取项目所有切片
+            old_clips = self.db.query(Clip).filter(Clip.project_id == project_id).all()
+            
+            for clip in old_clips:
+                # 标记为作废状态，但保留记录
+                clip.status = ClipStatus.INVALIDATED
+                logger.info(f"标记旧切片 {clip.id} 为作废")
+            
+            self.db.commit()
+        except Exception as e:
+            logger.error(f"标记旧切片为作废失败: {e}")
+            self.db.rollback()
     
     def _sync_collections_from_filesystem(self, project_id: str, project_dir: Path) -> int:
         """从文件系统同步合集数据"""

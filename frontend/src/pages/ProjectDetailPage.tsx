@@ -252,11 +252,29 @@ const ProjectDetailPage: React.FC = () => {
     if (!currentProject?.clips) return []
     const clips = [...currentProject.clips]
     
-    if (sortBy === 'score') {
-      return clips.sort((a, b) => b.final_score - a.final_score)
-    } else {
-      // 按时间排序 - 将时间字符串转换为秒数进行比较
-      return clips.sort((a, b) => {
+    // 首先按状态排序：已完成优先
+    // 然后按批次号排序：同一批次在一起，新批次优先
+    // 最后按用户选择的方式排序：时间或评分
+    return clips.sort((a, b) => {
+      // 1. 按状态排序：已完成优先
+      const statusPriority = (clip: any) => {
+        return clip.status === 'completed' ? 0 : 1
+      }
+      const statusDiff = statusPriority(a) - statusPriority(b)
+      if (statusDiff !== 0) return statusDiff
+      
+      // 2. 按批次号排序：同一批次在一起，新批次优先
+      const batchA = a.batch_number || ''
+      const batchB = b.batch_number || ''
+      if (batchA !== batchB) {
+        return batchB.localeCompare(batchA)
+      }
+      
+      // 3. 按用户选择的方式排序
+      if (sortBy === 'score') {
+        return b.final_score - a.final_score
+      } else {
+        // 按时间排序 - 将时间字符串转换为秒数进行比较
         const getTimeInSeconds = (timeStr: string) => {
           const parts = timeStr.split(':')
           const hours = parseInt(parts[0])
@@ -268,8 +286,8 @@ const ProjectDetailPage: React.FC = () => {
         const aTime = getTimeInSeconds(a.start_time)
         const bTime = getTimeInSeconds(b.start_time)
         return aTime - bTime
-      })
-    }
+      }
+    })
   }
 
   if (loading) {
@@ -497,35 +515,85 @@ const ProjectDetailPage: React.FC = () => {
             </div>
             
             {currentProject.clips && currentProject.clips.length > 0 ? (
-              <div 
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-                  gap: '20px',
-                  padding: '8px 0'
-                }}
-              >
-                {getSortedClips().map((clip) => (
-                  <ClipCard
-                    key={clip.id}
-                    clip={clip}
-                    projectId={currentProject.id}
-                    videoUrl={projectApi.getClipVideoUrl(currentProject.id, clip.id, clip.title || clip.generated_title)}
-                    onDownload={(clipId) => projectApi.downloadVideo(currentProject.id, clipId)}
-                    onClipUpdate={(clipId: string, updates: Partial<Clip>) => {
-                      // 更新本地状态
-                      if (currentProject) {
-                        const updatedProject = {
-                          ...currentProject,
-                          clips: currentProject.clips?.map((c: Clip) => 
-                            c.id === clipId ? { ...c, ...updates } : c
-                          ) || []
-                        }
-                        setCurrentProject(updatedProject)
-                      }
-                    }}
-                  />
-                ))}
+              <div>
+                {/* 按批次号分组显示 */}
+                {(() => {
+                  // 首先排序切片
+                  const sortedClips = getSortedClips()
+                  
+                  // 按批次号分组
+                  const groupedClips = sortedClips.reduce((groups, clip) => {
+                    const batch = clip.batch_number || '未分组'
+                    if (!groups[batch]) {
+                      groups[batch] = []
+                    }
+                    groups[batch].push(clip)
+                    return groups
+                  }, {} as Record<string, Clip[]>)
+                  
+                  // 转换为数组并按批次号排序（新批次优先）
+                  const batchEntries = Object.entries(groupedClips).sort(([batchA], [batchB]) => {
+                    if (batchA === '未分组') return 1
+                    if (batchB === '未分组') return -1
+                    return batchB.localeCompare(batchA)
+                  })
+                  
+                  return batchEntries.map(([batch, clips]) => (
+                    <div key={batch} style={{ marginBottom: '32px' }}>
+                      <div style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        marginBottom: '16px',
+                        paddingBottom: '8px',
+                        borderBottom: '1px solid #404040'
+                      }}>
+                        <h3 style={{ 
+                          margin: 0, 
+                          color: '#ffffff', 
+                          fontSize: '16px',
+                          fontWeight: 600
+                        }}>
+                          任务批次 {batch === '未分组' ? '（未分组）' : batch}
+                        </h3>
+                        <Text style={{ color: '#888', fontSize: '14px' }}>
+                          {clips.length} 个片段
+                        </Text>
+                      </div>
+                      
+                      <div 
+                        style={{
+                          display: 'grid',
+                          gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+                          gap: '20px',
+                          padding: '8px 0'
+                        }}
+                      >
+                        {clips.map((clip) => (
+                          <ClipCard
+                            key={clip.id}
+                            clip={clip}
+                            projectId={currentProject.id}
+                            videoUrl={projectApi.getClipVideoUrl(currentProject.id, clip.id, clip.title || clip.generated_title)}
+                            onDownload={(clipId) => projectApi.downloadVideo(currentProject.id, clipId)}
+                            onClipUpdate={(clipId: string, updates: Partial<Clip>) => {
+                              // 更新本地状态
+                              if (currentProject) {
+                                const updatedProject = {
+                                  ...currentProject,
+                                  clips: currentProject.clips?.map((c: Clip) => 
+                                    c.id === clipId ? { ...c, ...updates } : c
+                                  ) || []
+                                }
+                                setCurrentProject(updatedProject)
+                              }
+                            }}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  ))
+                })()}
               </div>
             ) : (
               <div style={{ 

@@ -16,6 +16,7 @@ class ClipStatus(str, Enum):
     PROCESSING = "processing"
     COMPLETED = "completed"
     FAILED = "failed"
+    INVALIDATED = "invalidated"
 
 
 class ClipCreate(BaseSchema):
@@ -57,6 +58,7 @@ class ClipResponse(BaseSchema):
     video_path: Optional[str] = Field(description="Video file path")
     tags: Optional[List[str]] = Field(description="Clip tags")
     clip_metadata: Optional[dict] = Field(description="Additional metadata")
+    batch_number: Optional[str] = Field(description="Batch number")
     created_at: datetime = Field(description="Creation timestamp")
     updated_at: datetime = Field(description="Last update timestamp")
     

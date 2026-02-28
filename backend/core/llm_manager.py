@@ -37,6 +37,7 @@ class LLMManager:
             "openai_api_key": "",
             "gemini_api_key": "",
             "siliconflow_api_key": "",
+            "deepseek_api_key": "",
             "model_name": "qwen-plus",
             "chunk_size": 5000,
             "min_score_threshold": 0.7,
@@ -91,6 +92,7 @@ class LLMManager:
             ProviderType.OPENAI: "openai_api_key",
             ProviderType.GEMINI: "gemini_api_key",
             ProviderType.SILICONFLOW: "siliconflow_api_key",
+            ProviderType.DEEPSEEK: "deepseek_api_key",
         }
         
         key_name = key_mapping.get(provider_type)
@@ -119,6 +121,7 @@ class LLMManager:
                 ProviderType.OPENAI: "openai_api_key",
                 ProviderType.GEMINI: "gemini_api_key",
                 ProviderType.SILICONFLOW: "siliconflow_api_key",
+                ProviderType.DEEPSEEK: "deepseek_api_key",
             }
             
             key_name = key_mapping.get(provider_type)
@@ -196,7 +199,8 @@ class LLMManager:
             ProviderType.DASHSCOPE: "阿里通义千问",
             ProviderType.OPENAI: "OpenAI",
             ProviderType.GEMINI: "Google Gemini",
-            ProviderType.SILICONFLOW: "硅基流动"
+            ProviderType.SILICONFLOW: "硅基流动",
+            ProviderType.DEEPSEEK: "DeepSeek"
         }
         return display_names.get(provider_type, provider_type.value)
     

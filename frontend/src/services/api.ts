@@ -249,12 +249,47 @@ export const projectApi = {
           outline: metadata.outline || '',
           // 只使用metadata中的content，避免使用description（可能是转写文本）
           content: metadata.content || [],
-          chunk_index: metadata.chunk_index || 0
+          chunk_index: metadata.chunk_index || 0,
+          status: clip.status || 'completed',
+          batch_number: clip.batch_number
         }
       })
       
       console.log('✅ Converted clips:', convertedClips.length, 'clips')
       console.log('📄 First clip sample:', convertedClips[0])
+      
+      // Sort clips by status, batch number, start time, and score
+      convertedClips.sort((a, b) => {
+        // 1. Sort by status: completed first
+        const statusPriority = (clip: any) => {
+          return clip.status === 'completed' ? 0 : 1;
+        };
+        const statusDiff = statusPriority(a) - statusPriority(b);
+        if (statusDiff !== 0) return statusDiff;
+        
+        // 2. Sort by batch number: same batch together, newer batches first
+        const batchA = a.batch_number || '';
+        const batchB = b.batch_number || '';
+        if (batchA !== batchB) {
+          return batchB.localeCompare(batchA);
+        }
+        
+        // 3. Sort by start time: earliest first
+        const timeToSeconds = (timeStr: string) => {
+          const parts = timeStr.split(':');
+          if (parts.length === 3) {
+            return parseInt(parts[0]) * 3600 + parseInt(parts[1]) * 60 + parseInt(parts[2]);
+          }
+          return 0;
+        };
+        const timeDiff = timeToSeconds(a.start_time) - timeToSeconds(b.start_time);
+        if (timeDiff !== 0) return timeDiff;
+        
+        // 4. Sort by score: higher score first
+        return (b.final_score || 0) - (a.final_score || 0);
+      });
+      
+      console.log('🔄 Sorted clips:', convertedClips.length, 'clips')
       return convertedClips
     } catch (error) {
       console.error('❌ Failed to get clips:', error)

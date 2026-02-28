@@ -32,6 +32,10 @@ class RedisConfig(BaseModel):
 class APIConfig(BaseModel):
     """API配置"""
     dashscope_api_key: str = Field(default="", description="DashScope API密钥")
+    openai_api_key: str = Field(default="", description="OpenAI API密钥")
+    gemini_api_key: str = Field(default="", description="Gemini API密钥")
+    siliconflow_api_key: str = Field(default="", description="硅基流动API密钥")
+    deepseek_api_key: str = Field(default="", description="DeepSeek API密钥")
     model_name: str = Field(default="qwen-plus", description="模型名称")
     max_tokens: int = Field(default=4096, description="最大token数")
     timeout: int = Field(default=30, description="API超时时间")
@@ -214,6 +218,14 @@ class UnifiedConfig(BaseSettings):
         # 设置API密钥到环境变量
         if self.api.dashscope_api_key:
             os.environ["DASHSCOPE_API_KEY"] = self.api.dashscope_api_key
+        if self.api.openai_api_key:
+            os.environ["OPENAI_API_KEY"] = self.api.openai_api_key
+        if self.api.gemini_api_key:
+            os.environ["GEMINI_API_KEY"] = self.api.gemini_api_key
+        if self.api.siliconflow_api_key:
+            os.environ["SILICONFLOW_API_KEY"] = self.api.siliconflow_api_key
+        if self.api.deepseek_api_key:
+            os.environ["DEEPSEEK_API_KEY"] = self.api.deepseek_api_key
         
         # 设置数据库URL
         os.environ["DATABASE_URL"] = self.database.url
@@ -253,10 +265,13 @@ class UnifiedConfig(BaseSettings):
                 config_dict[key] = value
         
         # 隐藏敏感信息
-        if 'api' in config_dict and 'dashscope_api_key' in config_dict['api']:
-            api_key = config_dict['api']['dashscope_api_key']
-            if api_key:
-                config_dict['api']['dashscope_api_key'] = api_key[:8] + "..." if len(api_key) > 8 else "***"
+        if 'api' in config_dict:
+            api_config = config_dict['api']
+            for key in ['dashscope_api_key', 'openai_api_key', 'gemini_api_key', 'siliconflow_api_key', 'deepseek_api_key']:
+                if key in api_config:
+                    api_key = api_config[key]
+                    if api_key:
+                        api_config[key] = api_key[:8] + "..." if len(api_key) > 8 else "***"
         
         return config_dict
     
@@ -296,7 +311,7 @@ class UnifiedConfig(BaseSettings):
                 "model_name": self.api.model_name,
                 "max_tokens": self.api.max_tokens,
                 "timeout": self.api.timeout,
-                "has_api_key": bool(self.api.dashscope_api_key)
+                "has_api_key": bool(self.api.dashscope_api_key or self.api.openai_api_key or self.api.gemini_api_key or self.api.siliconflow_api_key or self.api.deepseek_api_key)
             },
             "processing": {
                 "chunk_size": self.processing.chunk_size,
@@ -329,9 +344,9 @@ class UnifiedConfig(BaseSettings):
         """验证配置"""
         issues = []
         
-        # 验证API配置
-        if not self.api.dashscope_api_key:
-            issues.append("DashScope API密钥未配置")
+        # 验证API配置 - 至少需要配置一个API密钥
+        if not (self.api.dashscope_api_key or self.api.openai_api_key or self.api.gemini_api_key or self.api.siliconflow_api_key or self.api.deepseek_api_key):
+            issues.append("至少需要配置一个API密钥")
         
         # 验证路径
         for path_name, path_value in self.paths.__dict__.items():

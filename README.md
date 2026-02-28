@@ -884,8 +884,6 @@ uv --version
 
 uv python list
 
-uv python install 3.10.0
-
 uv python list --only-installed
 
 rm -rf venv
@@ -900,7 +898,7 @@ uv cache clean
 
 uv pip install -r requirements.txt
 
-cd bcut-asr
+<!-- cd bcut-asr
 
 sudo poetry lock
 sudo poetry build -f wheel
@@ -916,4 +914,4 @@ whisper /Users/archertrister/PycharmProjects/autoclip/data/temp/video.mp4 --outp
 
 whisper /Users/archertrister/PycharmProjects/autoclip/data/temp/video.mp4 --output_dir /Users/archertrister/PycharmProjects/autoclip/data/temp --output_format srt --model large
 
-turbo
+turbo -->
