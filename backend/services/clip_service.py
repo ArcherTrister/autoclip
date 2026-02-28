@@ -81,6 +81,7 @@ class ClipService(BaseService[Clip, ClipCreate, ClipUpdate, ClipResponse]):
                 video_path=getattr(clip, 'video_path', None),
                 tags=getattr(clip, 'tags', []) or [],
                 clip_metadata=getattr(clip, 'clip_metadata', {}) or {},
+                batch_number=getattr(clip, 'batch_number', None),
                 created_at=getattr(clip, 'created_at', None) if isinstance(getattr(clip, 'created_at', None), (type(None), __import__('datetime').datetime)) else None,
                 updated_at=getattr(clip, 'updated_at', None) if isinstance(getattr(clip, 'updated_at', None), (type(None), __import__('datetime').datetime)) else None,
                 collection_ids=[]

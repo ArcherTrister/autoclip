@@ -15,6 +15,7 @@ class ClipStatus(str, enum.Enum):
     PROCESSING = "processing"     # 处理中
     COMPLETED = "completed"       # 已完成
     FAILED = "failed"            # 失败
+    INVALIDATED = "invalidated"    # 作废
 
 class Clip(BaseModel):
     """切片模型"""
@@ -87,6 +88,11 @@ class Clip(BaseModel):
         Integer, 
         nullable=True, 
         comment="处理步骤（1-6）"
+    )
+    batch_number = Column(
+        String(36), 
+        nullable=True, 
+        comment="任务批次"
     )
     
     # 标签和元数据

@@ -12,6 +12,8 @@ export interface Clip {
   outline: string
   content: string[]
   chunk_index?: number  // 添加缺失字段
+  status?: string  // 切片状态
+  batch_number?: string  // 任务批次号
 }
 
 export interface Collection {

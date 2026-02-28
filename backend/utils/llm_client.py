@@ -38,8 +38,12 @@ class LLMClient:
     """LLM客户端 - 兼容性包装器"""
     
     def __init__(self):
-        self.model = MODEL_NAME
         self.llm_manager = get_llm_manager()
+    
+    @property
+    def model(self):
+        """Get the current model name from the LLM manager"""
+        return self.llm_manager.settings.get("model_name", "qwen-plus")
     
     def call(self, prompt: str, input_data: Any = None) -> str:
         """

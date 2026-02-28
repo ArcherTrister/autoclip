@@ -4,9 +4,9 @@
   "openai_api_key": "",
   "gemini_api_key": "",
   "siliconflow_api_key": "sk-umxrjddedsakelhlqmiyagiavuvawddvokdxpyfrwpqdmfiy",
-  "model_name": "deepseek-reasoner",
+  "deepseek_api_key": "sk-dbcb3b4ae3ff45eb9818a1e209d3de18",
+  "model_name": "qwen-plus",
   "chunk_size": 5000,
   "min_score_threshold": 0.7,
-  "max_clips_per_collection": 5,
-  "deepseek_api_key": "sk-dbcb3b4ae3ff45eb9818a1e209d3de18"
+  "max_clips_per_collection": 5
 }
